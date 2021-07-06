@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Servicing scenario:
+	* Change flight no. on outbound flight, retain original return:
+		* Original flight: LHR-JFK on 2021-08-09, flight XB01 & LHR-JFK on 2021-08-19, flight XB02
+		* New flight: LHR-JFK on 2021-08-10, flight XB03
+		* Retain original return: LHR-JFK on 2021-08-19, flight XB04
+		
+	* Change scenario:
+		* Residual value Exchange
+		  * No penality 
+		  * New Base fare is cheaper
+		* All services unused ( No flown segments ) 
+		
+
+	Reshop Offer:
+	* ORA: ZZ
+	* OfferID: RESHOP_OFFER001
+		* AddOfferItemID: RESHOP_OFFERITEM001
+			* Existing OrderItem: ORDERITEM001 (will be replaced by accepting Offer) Not clear how we communicate that the active service will be migrated when the new service is confirmed)
+				* Service SRV01: cancelled/removed (status of existing Service if Offer accepted)
+				* Service SRV02: confirmed/unused (status of existing Service if Offer accepted)
+			* Price details:
+				* Price differential:
+				    * Diff Price: 
+					    * Base:                 -1000.00 NUC  
+						* Taxes:                    0.00 
+							*YQ                     0.00 NUC
+							
+                        * Total:                -1000.00 NUC  
+						                                      				
+					* New Price:
+						* Base:					 8000.00 NUC
+						* Taxes: 				 1000.00 NUC 
+							* Tax YQ: 			 1000.00 NUC  
+							
+						* Total: 				10000.00 NUC
+					* Old Price:
+						* Base:					 9000.00 NUC
+						* Taxes: 				 1000.00 NUC 
+							* Tax YQ: 			 1000.00 NUC
+						* Total: 				10000.00 NUC
+				* Penalty for change: 			   00.00 NUC (non-netted)
+			
+			* Rules (Penalties prior to departure)
+				(These are the Offer conditions and will apply in subsequent changes)
+				* Cancellation:	60.00 NUC ( TODO update original scenario ) 
+				* Change:		50.00 NUC
+				
+	After the change : 
+		* ORDERITEM002
+		     *SRV02  LHR-JFK 10-08-2021
+			 *SRV33  JFK-LHR 19-08-2021
+-->
+
+
+
+
+
+
+
+
+
+<n1:IATA_OrderViewRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n2="http://www.altova.com/samplexml/other-namespace" xmlns:cns="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersCommonTypes" xmlns:n1="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage" xsi:schemaLocation="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage file://../IATA_OrderViewRS.xsd">
+
+	<n1:Response>
+
+		<cns:DataLists>
+			<cns:BaggageAllowanceList>
+				<cns:BaggageAllowance>
+					<cns:BaggageAllowanceID>BAGSRV01</cns:BaggageAllowanceID>
+					<cns:TypeCode>Checked</cns:TypeCode>
+					<cns:WeightAllowance>
+						<cns:MaximumWeightMeasure >23</cns:MaximumWeightMeasure><!-- BUG: KG error to correct -->
+					</cns:WeightAllowance>
+				</cns:BaggageAllowance>
+			</cns:BaggageAllowanceList>
+			<cns:OriginDestList>
+				<cns:OriginDest>
+					<cns:DestCode>NYC</cns:DestCode>
+					<cns:OriginCode>LON</cns:OriginCode>
+					<cns:OriginDestID>OND1</cns:OriginDestID>
+					<cns:PaxJourneyRefID>JRN_LONNYC</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+				<cns:OriginDest>
+					<cns:DestCode>LON</cns:DestCode>
+					<cns:OriginCode>NYC</cns:OriginCode>
+					<cns:OriginDestID>OND2</cns:OriginDestID>
+					<cns:PaxJourneyRefID>JRN_NYCLON</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+			</cns:OriginDestList>
+			<cns:PaxJourneyList>
+				<cns:PaxJourney>
+					<cns:DistanceMeasure>3459</cns:DistanceMeasure> <!-- BUG: Distance error to correct --> 
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:PaxJourneyID>JRN_LONNYC</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+				<cns:PaxJourney>
+					<cns:DistanceMeasure>3459</cns:DistanceMeasure>
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:PaxJourneyID>JRN_NYCLON</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG_NYCLON_2</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+			</cns:PaxJourneyList>
+
+			<cns:PaxList>
+				<cns:Pax>
+					<cns:Birthdate>1987-08-13</cns:Birthdate>
+					<cns:ContactInfo>
+						<cns:ContactInfoID>CTC01</cns:ContactInfoID>
+						<cns:ContactPurposeText>3</cns:ContactPurposeText>
+						<!-- could be a codeset --> 
+						<cns:EmailAddress>
+							<cns:ContactTypeText>Email</cns:ContactTypeText>
+							<cns:EmailAddressText>Jane@Mrssmith.com</cns:EmailAddressText>
+						</cns:EmailAddress>
+						<cns:Phone>
+							<cns:CountryDialingCode>44</cns:CountryDialingCode>
+							<cns:PhoneNumber>674646262631</cns:PhoneNumber>
+						</cns:Phone>
+						<cns:PostalAddress>
+							<cns:ContactTypeText>Personal</cns:ContactTypeText>
+							<cns:CountryCode>GB</cns:CountryCode>
+							<cns:CountryName>England</cns:CountryName>
+							<cns:PostalCode>W138AE</cns:PostalCode>
+							<cns:StreetText>THE Avenue</cns:StreetText>
+						</cns:PostalAddress>
+						<cns:RelationshipToPax>String</cns:RelationshipToPax>
+					</cns:ContactInfo>
+					<cns:IdentityDoc>
+						<cns:Birthdate>1957-08-13</cns:Birthdate>
+						<cns:BirthplaceText>GB</cns:BirthplaceText>
+						<cns:CitizenshipCountryCode>GB</cns:CitizenshipCountryCode>
+						<cns:ExpiryDate>2029-08-13</cns:ExpiryDate>
+						<cns:GenderCode>F</cns:GenderCode>
+						<cns:GivenName>Jane</cns:GivenName>
+						<cns:IdentityDocID>122331231312</cns:IdentityDocID>
+						<cns:IdentityDocTypeCode>ID Card</cns:IdentityDocTypeCode>
+						<cns:IssueDate>2020-08-13</cns:IssueDate>
+						<cns:IssuingCountryCode>GB</cns:IssuingCountryCode>
+						<cns:ResidenceCountryCode>GB</cns:ResidenceCountryCode>
+						<cns:Surname>Smith</cns:Surname>
+						<cns:TitleName>Mrs</cns:TitleName>
+					</cns:IdentityDoc>
+					<cns:Individual>
+						<cns:Birthdate>1957-08-13</cns:Birthdate>
+						<cns:GenderCode>F</cns:GenderCode>
+						<cns:GivenName>Jane</cns:GivenName>
+						<cns:IndividualID>Pax1</cns:IndividualID>
+						<cns:Surname>Smith</cns:Surname>
+						<cns:TitleName>Mrs</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>Pax1</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+					<cns:RedressCase>
+						<cns:CountryCode>US</cns:CountryCode>
+						<cns:ProgramName>redress</cns:ProgramName>
+						<cns:RedressCaseID>12356476</cns:RedressCaseID>
+					</cns:RedressCase>
+					<cns:ResidenceCountryCode>GB</cns:ResidenceCountryCode>
+				</cns:Pax>
+			</cns:PaxList>
+			<cns:PaxSegmentList>
+				<cns:PaxSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-08-09T19:30:47-04:00</cns:AircraftScheduledDateTime> <!-- Local time at the airport --> 
+						<cns:BoardingGateID>5</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy International Apt, US</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CabinType>
+						<cns:CabinTypeCode>3</cns:CabinTypeCode>
+						<cns:CabinTypeName>FLEX</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-08-09T09:30:47+01:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>a</cns:BoardingGateID>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow Airport</cns:StationName>
+						<cns:TerminalName>2</cns:TerminalName>
+					</cns:Dep>
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:MarketingCarrierInfo>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+						<cns:CarrierName>21.1 Airways</cns:CarrierName>
+						<cns:MarketingCarrierFlightNumberText>01</cns:MarketingCarrierFlightNumberText>
+						<cns:OperationalSuffixText>a</cns:OperationalSuffixText>
+						<cns:RBD_Code>Q</cns:RBD_Code>
+					</cns:MarketingCarrierInfo>
+					<cns:PaxSegmentID>SEG_LONNYC_1</cns:PaxSegmentID>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+					<cns:TicketlessInd>false</cns:TicketlessInd>
+				</cns:PaxSegment>
+				<cns:PaxSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-08-19T19:30:47+01:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>5</cns:BoardingGateID>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow Airport</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CabinType>
+						<cns:CabinTypeCode>3</cns:CabinTypeCode>
+						<cns:CabinTypeName>ECO-FLEX</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-08-19T09:30:47-04:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>a</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy International Apt, US </cns:StationName>
+						<cns:TerminalName>2</cns:TerminalName>
+					</cns:Dep>
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:MarketingCarrierInfo>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+						<cns:CarrierName>21.1 Airways</cns:CarrierName>
+						<cns:MarketingCarrierFlightNumberText>02</cns:MarketingCarrierFlightNumberText>
+						<cns:OperationalSuffixText>a</cns:OperationalSuffixText>
+						<cns:RBD_Code>Q</cns:RBD_Code>
+					</cns:MarketingCarrierInfo>
+					<cns:PaxSegmentID>SEG_NYCLON_2</cns:PaxSegmentID>
+
+				</cns:PaxSegment>
+			</cns:PaxSegmentList>
+
+
+
+		</cns:DataLists>
+
+		<cns:Order>
+			<cns:CreationDateTime>2001-12-17T09:30:47Z</cns:CreationDateTime>
+			<cns:LastModifiedDateTime>2001-12-17T09:30:47Z</cns:LastModifiedDateTime>
+			<cns:OrderID>XB000A1B2C3D4</cns:OrderID> <!-- follow IATA resolution 777 -->
+			<cns:OrderItem> <!-- Flight service OrderItem --> 
+				<cns:CancelRestrictions>
+					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
+					<cns:EffectiveDateTime>2001-12-17T09:30:47Z</cns:EffectiveDateTime> <!-- documentation of if we need to have both of them or is it equal to NVA/NVB for ATPCO fares--> 
+					<cns:ExpirationDateTime>2001-12-17T09:30:47Z</cns:ExpirationDateTime>
+					<cns:Fee>
+						<cns:Amount CurCode="NUC">0</cns:Amount>
+						<cns:ApproximateInd>true</cns:ApproximateInd>
+						<cns:DescText>Plus any additional fare difference</cns:DescText>
+						<!--cns:MaximumAmount CurCode="NUC">0</cns:MaximumAmount>
+								<cns:MinimumAmount CurCode="NUC">0</cns:MinimumAmount>
+								<cns:Percent>0</cns:Percent-->
+					</cns:Fee>
+					<cns:JourneyStageCode>After Departure</cns:JourneyStageCode>
+					<cns:PaxRefID>Pax1</cns:PaxRefID>
+					<cns:Refund>
+						<cns:DescText>Refund after departure will not incur a change fee</cns:DescText>
+						<cns:FixedAmount CurCode="NUC">0</cns:FixedAmount>
+						<cns:LevelTypeCode>Full</cns:LevelTypeCode>
+						<cns:PaymentTypeCode>OFOP</cns:PaymentTypeCode> <!-- what does this mean --> 
+						<!--cns:MaximumAmount CurCode="NUC">0</cns:MaximumAmount>
+								<cns:MinimumAmount CurCode="NUC">10</cns:MinimumAmount>
+								<cns:Percent>10</cns:Percent-->
+					</cns:Refund>
+				</cns:CancelRestrictions>
+				<cns:ChangeRestrictions>
+					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
+					<cns:EffectiveDateTime>2001-12-17T09:30:47Z</cns:EffectiveDateTime>
+					<cns:ExpirationDateTime>2001-12-17T09:30:47Z</cns:ExpirationDateTime>
+					<cns:Fee>
+						<cns:Amount CurCode="NUC">0</cns:Amount>
+						<cns:ApproximateInd>true</cns:ApproximateInd>
+						<!--cns:DescText>String</cns:DescText> need documentation to have mutually exclusive condition
+								<cns:MaximumAmount CurCode="NUC">0</cns:MaximumAmount>
+								<cns:MinimumAmount CurCode="NUC">10</cns:MinimumAmount>
+								<cns:Percent>10</cns:Percent-->
+					</cns:Fee>
+					<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+					<cns:PaxRefID>Pax1</cns:PaxRefID>
+				</cns:ChangeRestrictions>
+				<cns:Commission>
+					<cns:Amount>0</cns:Amount>
+				</cns:Commission>
+				<cns:FareDetail>
+					<cns:FareComponent>
+						<cns:CabinType>
+							<cns:CabinTypeCode>3</cns:CabinTypeCode>
+							<cns:CabinTypeName>ECO-FLEX</cns:CabinTypeName>
+						</cns:CabinType>
+						<cns:FareBasisCode>QBY08IZ2</cns:FareBasisCode>
+						<cns:FareTypeCode>PUBLIC</cns:FareTypeCode>
+						<cns:PaxSegmentRefID>JRN_NYCLON</cns:PaxSegmentRefID>
+						<cns:PriceClassRefID>PC1</cns:PriceClassRefID>
+						<cns:RBD>
+							<cns:RBD_Code>Q</cns:RBD_Code>
+						</cns:RBD>
+					</cns:FareComponent>
+					<cns:FareComponent>
+						<cns:CabinType>
+							<cns:CabinTypeCode>3</cns:CabinTypeCode>
+							<cns:CabinTypeName>ECO-FLEX</cns:CabinTypeName>
+						</cns:CabinType>
+						<cns:FareBasisCode>QBY08IZ2</cns:FareBasisCode>
+						<cns:FareTypeCode>PUBLIC</cns:FareTypeCode>
+						<cns:PaxSegmentRefID>JRN_LONNYC</cns:PaxSegmentRefID>
+						<cns:PriceClassRefID>PC1</cns:PriceClassRefID>
+						<cns:RBD>
+							<cns:RBD_Code>Q</cns:RBD_Code>
+						</cns:RBD>
+					</cns:FareComponent>
+					<cns:FarePriceType>
+						<cns:FarePriceTypeCode>SELL AMOUNT</cns:FarePriceTypeCode>
+						<cns:Price>
+							<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+						</cns:Price>
+					</cns:FarePriceType>
+					<cns:PaxRefID>Pax1</cns:PaxRefID>
+					<cns:Price>
+						<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+						<cns:TaxSummary>
+							<cns:Tax>
+								<cns:AddlTaxCode>YQ</cns:AddlTaxCode>
+								<cns:Amount>1000</cns:Amount>
+							</cns:Tax>
+							<cns:TotalTaxAmount>1000</cns:TotalTaxAmount>
+						</cns:TaxSummary>
+					</cns:Price>
+				</cns:FareDetail>
+
+				<cns:GrandTotalAmount CurCode="token">0</cns:GrandTotalAmount> <!-- to Remove --> 
+				<!-- what is the use of it -->
+
+				<cns:OrderItemID>OrderItem1</cns:OrderItemID>
+				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimitDateTime>2001-12-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+
+				<cns:Price>
+					<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+					<cns:BaseAmountGuaranteeTimeLimitDateTime>2001-12-17T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
+					<cns:TaxSummary>
+						<cns:Tax>
+							<cns:Amount CurCode="NUC">1000</cns:Amount>
+							<cns:FiledTaxCode>YQ</cns:FiledTaxCode>
+							<!-- Functional Documentation needed what filing are we talking about  -->
+							<cns:QualifierCode>YQ</cns:QualifierCode>
+							<cns:TaxCode>YQ</cns:TaxCode>
+							<cns:TaxName>YQ</cns:TaxName>
+						</cns:Tax>
+						<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+					</cns:TaxSummary>
+					<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+				</cns:Price>
+				<cns:PriceGuaranteeTimeLimitDateTime>2001-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:Service>
+					<cns:BookingRef>
+						<cns:BookingID>XBABC</cns:BookingID>
+					</cns:BookingRef>
+					<cns:PaxRefID>Pax1</cns:PaxRefID>
+					<cns:ServiceAssociation>
+						<cns:PaxSegmentRef>
+							<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+						</cns:PaxSegmentRef>
+					</cns:ServiceAssociation>
+
+					<cns:ServiceID>SRV01</cns:ServiceID>
+				</cns:Service>
+				<cns:Service>
+					<cns:PaxRefID>Pax1</cns:PaxRefID>
+					<cns:ServiceAssociation>
+						<cns:PaxSegmentRef>
+							<cns:PaxSegmentRefID>SEG_LONNYC_2</cns:PaxSegmentRefID>
+						</cns:PaxSegmentRef>
+					</cns:ServiceAssociation>
+					<cns:ServiceID>SRV02</cns:ServiceID>
+				</cns:Service>
+
+			</cns:OrderItem>
+
+			<cns:OrderVersionNumber>1</cns:OrderVersionNumber>
+			<cns:OwnerCode>XB</cns:OwnerCode>
+			<cns:StatusCode>OPENED</cns:StatusCode>
+			<cns:TotalPrice>
+				<cns:BaseAmount CurCode="NUC">10000</cns:BaseAmount>
+				<cns:BaseAmountGuaranteeTimeLimitDateTime>2001-12-17T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
+				<cns:TaxSummary>
+					<cns:Tax>
+						<cns:Amount CurCode="NUC">1000</cns:Amount>
+						<cns:FiledTaxCode>YQ</cns:FiledTaxCode>
+						<cns:QualifierCode>YQ</cns:QualifierCode>
+						<cns:TaxCode>YQ</cns:TaxCode>
+						<cns:TaxName>YQ</cns:TaxName>
+					</cns:Tax>
+					<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+				</cns:TaxSummary>
+				<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+			</cns:TotalPrice>
+
+		</cns:Order>
+
+
+		<cns:TicketDocInfo>
+			<cns:BaggageAllowanceRefID>BAGREF01</cns:BaggageAllowanceRefID>
+			<cns:BookingRef>
+				<cns:BookingEntity>
+					<cns:Carrier>
+						<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+						<cns:Name>21.1 Airways</cns:Name>
+					</cns:Carrier>
+				</cns:BookingEntity>
+				<cns:BookingID>PNREF123</cns:BookingID> 
+			</cns:BookingRef>
+			<cns:BookletQty>1</cns:BookletQty>
+			<cns:OriginalIssueInfo>
+				<cns:IssueDate>2021-12-17</cns:IssueDate>
+				<cns:IssueTime>09:30:47Z</cns:IssueTime>
+				<cns:IssuingCarrier>
+					<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+					<cns:Name> 21.1 Airlines </cns:Name>
+				</cns:IssuingCarrier>
+			</cns:OriginalIssueInfo>
+			<cns:PaxRefID>Pax1</cns:PaxRefID>
+			<cns:PaymentInfoRefID>PAY0001</cns:PaymentInfoRefID>
+			<cns:Ticket>
+				<cns:Coupon>
+					<!--<cns:BaggageAllowanceRefID>token</cns:BaggageAllowanceRefID> -->
+					<cns:CouponNumber>1</cns:CouponNumber>
+					<cns:CouponStatusCode>O</cns:CouponStatusCode> <!-- Open ticket --> 
+					<cns:CurrentCouponFlightInfoRef>
+						<cns:CheckedInAirlinePaxSegmentRef>
+							<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+						</cns:CheckedInAirlinePaxSegmentRef>
+					</cns:CurrentCouponFlightInfoRef>
+
+					<cns:PromotionRefID>token</cns:PromotionRefID> <!-- Temporary need to remove --> 
+					<cns:ServiceRefID>SRV01</cns:ServiceRefID>
+					<!-- Service ID in the orderitem1 --> 
+				</cns:Coupon>
+				<cns:Coupon>
+					<cns:CouponNumber>2</cns:CouponNumber>
+					<cns:CouponStatusCode>O</cns:CouponStatusCode>
+					<cns:CurrentCouponFlightInfoRef>
+						<cns:CheckedInAirlinePaxSegmentRef>
+							<cns:PaxSegmentRefID>SEG_NYCLON_2</cns:PaxSegmentRefID>
+						</cns:CheckedInAirlinePaxSegmentRef>
+					</cns:CurrentCouponFlightInfoRef>
+					<cns:PromotionRefID>token</cns:PromotionRefID>
+					<cns:ServiceRefID>SRV02</cns:ServiceRefID>
+					<!-- Service ID in the orderitem1 --> 
+				</cns:Coupon>
+				<cns:ReportingTypeCode>BSP</cns:ReportingTypeCode>
+				<cns:TicketDocTypeCode>T</cns:TicketDocTypeCode> <!-- document the use of it --> 
+				<cns:TicketNumber>22334455667788-1</cns:TicketNumber>
+			</cns:Ticket>
+
+		</cns:TicketDocInfo>
+	</n1:Response>
+
+	<n1:PaymentFunctions>
+		<cns:PaymentProcessingSummary>
+			<cns:Amount CurCode="NUC">10000</cns:Amount>
+
+			<cns:PaymentCommitmentDateTime>2021-12-17T09:30:47Z</cns:PaymentCommitmentDateTime>
+			<cns:PaymentID>PAY0001</cns:PaymentID>
+			<!-- important identifiaction needed for down stream processes -->
+			<cns:PaymentProcessingSummaryPaymentMethod>
+				<cns:PaymentCardTrxPaymentCard>
+					<cns:CardBrandCode>VI</cns:CardBrandCode>
+					<cns:CardholderAddress>
+						<cns:CityName>LONDON</cns:CityName>
+						<cns:ContactTypeText>STANDARD</cns:ContactTypeText>
+						<cns:CountryCode>UK</cns:CountryCode>
+						<cns:PostalCode>W138AE</cns:PostalCode>
+						<cns:StreetText>The Avenue</cns:StreetText>
+					</cns:CardholderAddress>
+					<cns:CardHolderName>Jane</cns:CardHolderName>
+					<cns:CardIssuerName>Some bank</cns:CardIssuerName>
+					<cns:CardIssuingCountryCode>AA</cns:CardIssuingCountryCode>
+					<cns:CardNumber>0219</cns:CardNumber>
+					<cns:CardTypeText>VISA</cns:CardTypeText>
+					<cns:CreditCardVendorCode>VI</cns:CreditCardVendorCode>
+					<cns:EffectiveDate>0100</cns:EffectiveDate>
+					<cns:ExpirationDate>0100</cns:ExpirationDate>
+					<cns:PaymentInstrumentOwnershipCode>Customer</cns:PaymentInstrumentOwnershipCode>
+					<cns:TokenizedCardID>21231231</cns:TokenizedCardID>
+					<!--- Tockenizedid -->
+					<cns:VerificationInd>true</cns:VerificationInd>
+				</cns:PaymentCardTrxPaymentCard>
+
+			</cns:PaymentProcessingSummaryPaymentMethod>
+
+			<cns:PaymentStatusCode>ACCEPTED</cns:PaymentStatusCode>
+
+			<cns:PriceVarianceAmount CurCode="token">0</cns:PriceVarianceAmount>
+			<cns:TypeCode>Credit Card </cns:TypeCode>
+		</cns:PaymentProcessingSummary>
+
+
+	</n1:PaymentFunctions>
+
+</n1:IATA_OrderViewRS>
