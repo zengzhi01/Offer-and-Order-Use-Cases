@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Servicing scenario:
+	* Change flight no. on outbound flight, retain original return:
+		* Original flight: LHR-JFK on 2021-08-09, flight XB01 & LHR-JFK on 2021-08-19, flight XB02
+		* New flight: LHR-JFK on 2021-08-10, flight XB03
+		* Retain original return: LHR-JFK on 2021-08-19, flight XB04
+		
+	* Change scenario:
+		* Residual value Exchange
+		  * No penality 
+		  * New Base fare is cheaper
+		* All services unused ( No flown segments ) 
+		
+
+	Reshop Offer:
+	* ORA: ZZ
+	* OfferID: RESHOP_OFFER001
+		* AddOfferItemID: RESHOP_OFFERITEM001
+			* Existing OrderItem: ORDERITEM001 (will be replaced by accepting Offer) Not clear how we communicate that the active service will be migrated when the new service is confirmed)
+				* Service SRV01: cancelled/removed (status of existing Service if Offer accepted)
+				* Service SRV02: confirmed/unused (status of existing Service if Offer accepted)
+			* Price details:
+				* Price differential:
+				    * Diff Price: 
+					    * Base:                 -1000.00 NUC  
+						* Taxes:                    0.00 
+							*YQ                     0.00 NUC
+							
+                        * Total:                -1000.00 NUC  
+						                                      				
+					* New Price:
+						* Base:					 8000.00 NUC
+						* Taxes: 				 1000.00 NUC 
+							* Tax YQ: 			 1000.00 NUC  
+							
+						* Total: 				10000.00 NUC
+					* Old Price:
+						* Base:					 9000.00 NUC
+						* Taxes: 				 1000.00 NUC 
+							* Tax YQ: 			 1000.00 NUC
+						* Total: 				10000.00 NUC
+				* Penalty for change: 			   00.00 NUC (non-netted)
+			
+			* Rules (Penalties prior to departure)
+				(These are the Offer conditions and will apply in subsequent changes)
+				* Cancellation:	60.00 NUC ( TODO update original scenario ) 
+				* Change:		50.00 NUC
+				
+	After the change : 
+		* ORDERITEM002
+		     *SRV02  LHR-JFK 10-08-2021
+			 *SRV33  JFK-LHR 19-08-2021
+-->
+
+<n1:IATA_OrderReshopRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage IATA_OrderReshopRS.xsd">
+	<n1:Response>
+
+
+		<cns:DataLists>
+
+			<cns:OriginDestList>
+				<cns:OriginDest>
+					<cns:DestCode>NYC</cns:DestCode>
+					<cns:OriginCode>LON</cns:OriginCode>
+					<cns:OriginDestID>OND1</cns:OriginDestID>
+					<cns:PaxJourneyRefID>JRN_LONNYC</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+				<cns:OriginDest>
+					<cns:DestCode>LON</cns:DestCode>
+					<cns:OriginCode>NYC</cns:OriginCode>
+					<cns:OriginDestID>OND2</cns:OriginDestID>
+					<cns:PaxJourneyRefID>JRN_NYCLON</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+			</cns:OriginDestList>
+			<cns:PaxJourneyList>
+				<cns:PaxJourney>
+					<cns:PaxJourneyID>JRN_LONNYC</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+				<cns:PaxJourney>
+					<cns:PaxJourneyID>JRN_NYCLON</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG_NYCLON_2</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+			</cns:PaxJourneyList>
+			<cns:PaxList>
+				<cns:Pax>
+					<cns:PaxID>Pax1</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+				</cns:Pax>
+			</cns:PaxList>
+			<cns:PaxSegmentList>
+				<cns:PaxSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-08-09T19:30:47-04:00</cns:AircraftScheduledDateTime>
+						<!-- Local time at the airport --> 
+						<cns:BoardingGateID>5</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy International Apt, US</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CabinType>
+						<cns:CabinTypeCode>3</cns:CabinTypeCode>
+						<cns:CabinTypeName>FLEX</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-08-09T09:30:47+01:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>a</cns:BoardingGateID>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow Airport</cns:StationName>
+						<cns:TerminalName>2</cns:TerminalName>
+					</cns:Dep>
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:MarketingCarrierInfo>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+						<cns:CarrierName>21.1 Airways</cns:CarrierName>
+						<cns:MarketingCarrierFlightNumberText>01</cns:MarketingCarrierFlightNumberText>
+						<cns:OperationalSuffixText>a</cns:OperationalSuffixText>
+						<cns:RBD_Code>Q</cns:RBD_Code>
+					</cns:MarketingCarrierInfo>
+					<cns:PaxSegmentID>SEG_LONNYC_1</cns:PaxSegmentID>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+					<cns:TicketlessInd>false</cns:TicketlessInd>
+				</cns:PaxSegment>
+				<cns:PaxSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-08-19T19:30:47+01:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>5</cns:BoardingGateID>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow Airport</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CabinType>
+						<cns:CabinTypeCode>3</cns:CabinTypeCode>
+						<cns:CabinTypeName>ECO-FLEX</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-08-19T09:30:47-04:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>a</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy International Apt, US </cns:StationName>
+						<cns:TerminalName>2</cns:TerminalName>
+					</cns:Dep>
+					<cns:Duration>P1Y2M2DT10H30M</cns:Duration>
+					<cns:MarketingCarrierInfo>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+						<cns:CarrierName>21.1 Airways</cns:CarrierName>
+						<cns:MarketingCarrierFlightNumberText>02</cns:MarketingCarrierFlightNumberText>
+						<cns:OperationalSuffixText>a</cns:OperationalSuffixText>
+						<cns:RBD_Code>Q</cns:RBD_Code>
+					</cns:MarketingCarrierInfo>
+					<cns:PaxSegmentID>SEG_NYCLON_2</cns:PaxSegmentID>
+
+				</cns:PaxSegment>
+			</cns:PaxSegmentList>
+
+
+		</cns:DataLists>
+
+
+		<cns:ReshopResults>
+
+
+			<cns:ReshopOffers>
+
+				<cns:Offer>
+					<cns:AddedOfferItem>
+
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:Fee>
+								<cns:Amount CurCode="NUC">40.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+						</cns:CancelRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+							<cns:Fee>
+								<cns:Amount CurCode="NUC">50.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+						</cns:ChangeRestrictions>
+
+
+						<cns:ExistingOrderItem>
+							<!-- Need explicit mention of the remaining services like SERVICE001 too ? -->
+							<cns:ExistingService>
+								<cns:ServiceRefID>SRV01</cns:ServiceRefID>
+								<cns:StatusCode>X</cns:StatusCode>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>OrderItem1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+
+						<cns:OfferedService>
+
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>JRN_LONNYC</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+							<cns:ServiceID>SRV03</cns:ServiceID>
+
+						</cns:OfferedService>
+						<cns:OfferItemID>RESHOP_OFFERITEM001</cns:OfferItemID>
+
+						<cns:OwnerCode>0A</cns:OwnerCode>
+						<cns:OwnerTypeCode>ORA</cns:OwnerTypeCode> 
+
+						<cns:ReshopPrice>
+
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>Residual</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:FareDetail>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">0</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">0.00</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+													</cns:Tax>
+
+													<cns:TotalTaxAmount CurCode="NUC">0.00</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">-1000.00</cns:TotalAmount>
+												<!-- Total due by passenger , total due by airline --> 
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">0.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">0.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:DiffPrice>
+								<!-- Needs to be agreed if this is additional collection or grand total of the new Order. In this case, grand total of the new Order. -->
+								<cns:GrandTotalAmount CurCode="NUC">140.00</cns:GrandTotalAmount>
+								<cns:NewPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<cns:FareBasisCode>YADT</cns:FareBasisCode>
+											<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+											<cns:RBD>
+												<cns:RBD_Code>Y</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">1000</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+														<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+													</cns:Tax>
+													<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">1000.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+												<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<cns:FareBasisCode>YADT</cns:FareBasisCode>
+											<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+											<cns:RBD>
+												<cns:RBD_Code>Y</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">1000</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+														<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+													</cns:Tax>
+													<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">1000.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+												<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+
+					</cns:AddedOfferItem>
+
+
+					<cns:AddedOfferItem>
+						<cns:ExistingOrderItem>
+							<!-- Need explicit mention of the remaining services like SERVICE001 too ? -->
+							<cns:ExistingService>
+								<cns:ServiceRefID>SRV01</cns:ServiceRefID>
+								<cns:StatusCode>X</cns:StatusCode>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>OrderItem1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<!-- This residual value will need to be selected at the same time --> 
+						<cns:OfferedService>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:ServiceDefinitionRefID>SRV_RES</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+							<cns:ServiceID>SRV99</cns:ServiceID>
+						</cns:OfferedService>
+						<cns:OfferItemID>OfferItem2</cns:OfferItemID>
+						<cns:ReshopPrice>
+							<cns:PriceAndFareDetails>
+								<cns:Price>
+									<cns:TotalAmount>100</cns:TotalAmount>
+								</cns:Price>
+							</cns:PriceAndFareDetails>
+							<!-- To discuss with the group -->
+						</cns:ReshopPrice>
+					</cns:AddedOfferItem>
+
+					<cns:OfferExpirationTimeLimitDateTime>2001-12-17T09:30:47Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>RESHOP_OFFER001</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:ValidatingCarrierCode>XB</cns:ValidatingCarrierCode>
+				</cns:Offer>
+
+
+				<cns:Offer>
+					<!-- Refund offer --> 
+					<cns:AddedOfferItem>
+
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:Fee>
+								<cns:Amount CurCode="NUC">40.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+						</cns:CancelRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+							<cns:Fee>
+								<cns:Amount CurCode="NUC">50.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+						</cns:ChangeRestrictions>
+
+
+						<cns:ExistingOrderItem>
+							<!-- Need explicit mention of the remaining services like SERVICE001 too ? -->
+							<cns:ExistingService>
+								<cns:ServiceRefID>SRV01</cns:ServiceRefID>
+								<cns:StatusCode>X</cns:StatusCode>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>OrderItem1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+
+						<cns:OfferedService>
+
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>JRN_LONNYC</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>Pax1</cns:PaxRefID>
+							<cns:ServiceID>SRV03</cns:ServiceID>
+
+						</cns:OfferedService>
+						<cns:OfferItemID>RESHOP_OFFERITEM001</cns:OfferItemID>
+
+						<cns:OwnerCode>0A</cns:OwnerCode>
+						<cns:OwnerTypeCode>ORA</cns:OwnerTypeCode> 
+
+						<cns:ReshopPrice>
+
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>Refund</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:FareDetail>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">0</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">0.00</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+													</cns:Tax>
+
+													<cns:TotalTaxAmount CurCode="NUC">0.00</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">-1000.00</cns:TotalAmount>
+												<!-- Total due by passenger , total due by airline --> 
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">0.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">0.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:DiffPrice>
+								<!-- Needs to be agreed if this is additional collection or grand total of the new Order. In this case, grand total of the new Order. -->
+								<cns:GrandTotalAmount CurCode="NUC">140.00</cns:GrandTotalAmount>
+								<cns:NewPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<cns:FareBasisCode>YADT</cns:FareBasisCode>
+											<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+											<cns:RBD>
+												<cns:RBD_Code>Y</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">1000</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+														<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+													</cns:Tax>
+													<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">1000.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+												<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<cns:FareBasisCode>YADT</cns:FareBasisCode>
+											<cns:PaxSegmentRefID>SEG_LONNYC_1</cns:PaxSegmentRefID>
+											<cns:RBD>
+												<cns:RBD_Code>Y</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FarePriceType>
+											<cns:FarePriceTypeCode>Sell</cns:FarePriceTypeCode>
+											<cns:Price>
+												<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+												<cns:TaxSummary>
+													<cns:Tax>
+														<cns:Amount CurCode="NUC">1000</cns:Amount>
+														<cns:TaxCode>YQ</cns:TaxCode>
+														<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+													</cns:Tax>
+													<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+												</cns:TaxSummary>
+												<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+											</cns:Price>
+										</cns:FarePriceType>
+										<cns:PaxRefID>Pax1</cns:PaxRefID>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="NUC">9000</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="NUC">1000.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+												<cns:TaxTypeCode>Applied</cns:TaxTypeCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="NUC">1000</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="NUC">10000</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+
+					</cns:AddedOfferItem>
+					<cns:OfferExpirationTimeLimitDateTime>2001-12-17T09:30:47Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>RESHOP_OFFER002</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:ValidatingCarrierCode>XB</cns:ValidatingCarrierCode>
+				</cns:Offer>
+			</cns:ReshopOffers>
+		</cns:ReshopResults>
+
+
+	</n1:Response>
+
+
+</n1:IATA_OrderReshopRS>
