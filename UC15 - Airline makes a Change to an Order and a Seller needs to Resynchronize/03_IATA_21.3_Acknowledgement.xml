@@ -1,0 +1,5 @@
+<n1:IATA_Acknowledgement xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage IATA_Acknowledgement.xsd">
+	<n1:Notification>
+		<cns:StatusCode>OK</cns:StatusCode>
+	</n1:Notification>
+</n1:IATA_Acknowledgement>
