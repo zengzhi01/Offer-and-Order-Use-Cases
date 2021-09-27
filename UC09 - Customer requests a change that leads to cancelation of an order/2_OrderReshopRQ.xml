@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_OrderReshopRQ xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/vic.zep/Work%20Folders/Desktop/OneDrive%20-%20hahnair.onmicrosoft.com/NDC%20Schemas/21_2_18_key_keyrefs_Draft_schemas/IATA_OrderReshopRQ.xsd">
+	<DistributionChain>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>1</cns:Ordinal>
+			<cns:OrgRole>Seller</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:OrgID>12345678</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>2</cns:Ordinal>
+			<cns:OrgRole>Carrier</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:OrgID>XB</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+	</DistributionChain>
+	<Request>
+		<cns:OrderRefID>XB999A1B2C3D4</cns:OrderRefID>
+		<cns:UpdateOrder>
+			<cns:CancelOrderRef>
+				<cns:OrderRefID>XB999A1B2C3D4</cns:OrderRefID>
+			</cns:CancelOrderRef>
+		</cns:UpdateOrder>
+	</Request>
+</IATA_OrderReshopRQ>
