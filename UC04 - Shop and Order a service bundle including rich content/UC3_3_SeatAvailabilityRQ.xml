@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<n1:IATA_SeatAvailabilityRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cns="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersCommon" xmlns:n1="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage" xsi:schemaLocation="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage ../IATA_SeatAvailabilityRQ.xsd">
+	<n1:Party>
+			<cns:Sender>
+			<cns:TravelAgency>
+				<cns:AgencyID >12345678</cns:AgencyID>
+				<cns:IATA_Number>12345678</cns:IATA_Number>
+				<cns:TravelAgent>
+					<cns:TravelAgentID>12345578</cns:TravelAgentID>
+					<cns:TypeCode>OnlineTravelAgency</cns:TypeCode>
+				</cns:TravelAgent>
+				<cns:TypeCode>TravelAgency</cns:TypeCode>
+			</cns:TravelAgency>
+		</cns:Sender>
+	</n1:Party>
+	<n1:Request>
+	<!-- <cns:Pax>  No need to repeat the loyalty number AI:Ask group !
+		<cns:LoyaltyProgramAccount>
+		<cns:AccountNumber>1234567503</cns:AccountNumber>
+			<cns:LoyaltyProgram><cns:Carrier>
+				<cns:AirlineDesigCode>0A</cns:AirlineDesigCode>
+			</cns:Carrier></cns:LoyaltyProgram>
+		</cns:LoyaltyProgramAccount>
+		<cns:PaxID>Pax1</cns:PaxID>
+	</cns:Pax>-->
+		<cns:SeatAvailibilityCoreRequest>
+			<cns:SeatAvailOfferRequest>
+				<cns:Offer>
+					<cns:OfferID>Offer1</cns:OfferID>
+					<cns:OfferItem>
+						<cns:OfferItemID>OfferItem1</cns:OfferItemID>
+					</cns:OfferItem>
+					<cns:OfferItem>
+						<cns:OfferItemID>CHD-OfferItem2</cns:OfferItemID>
+					</cns:OfferItem>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+				</cns:Offer>
+    		</cns:SeatAvailOfferRequest>
+		</cns:SeatAvailibilityCoreRequest>
+	</n1:Request>
+</n1:IATA_SeatAvailabilityRQ>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_OrderReshopRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../IATA_OrderReshopRS.xsd">
+	<Response>
+		<cns:DataLists>
+			<cns:DatedMarketingSegmentList>
+				<cns:DatedMarketingSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-11-16T09:50:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow</cns:StationName>
+						<cns:TerminalName>5</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedMarketingSegmentId>MKTSEG-1</cns:DatedMarketingSegmentId>
+					<cns:DatedOperatingSegmentRefId>OPESEG-1</cns:DatedOperatingSegmentRefId>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-11-15T22:00:00-05:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>10</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Dep>
+					<cns:MarketingCarrierFlightNumberText>0015</cns:MarketingCarrierFlightNumberText>
+				</cns:DatedMarketingSegment>
+				<cns:DatedMarketingSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-11-26T09:50:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow</cns:StationName>
+						<cns:TerminalName>5</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedMarketingSegmentId>MKTSEG-2</cns:DatedMarketingSegmentId>
+					<cns:DatedOperatingSegmentRefId>OPESEG-2</cns:DatedOperatingSegmentRefId>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-11-25T22:00:00-05:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>10</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Dep>
+					<cns:MarketingCarrierFlightNumberText>0015</cns:MarketingCarrierFlightNumberText>
+				</cns:DatedMarketingSegment>
+			</cns:DatedMarketingSegmentList>
+			<cns:DatedOperatingLegList>
+				<cns:DatedOperatingLeg>
+					<cns:Arrival>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+					</cns:Arrival>
+					<cns:DatedOperatingLegID>LEG-1</cns:DatedOperatingLegID>
+					<cns:Dep>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:Dep>
+					<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
+					<cns:IATA_AircraftType>
+						<cns:IATA_AircraftTypeCode>35J</cns:IATA_AircraftTypeCode>
+					</cns:IATA_AircraftType>
+				</cns:DatedOperatingLeg>
+				<cns:DatedOperatingLeg>
+					<cns:Arrival>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+					</cns:Arrival>
+					<cns:DatedOperatingLegID>LEG-2</cns:DatedOperatingLegID>
+					<cns:Dep>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:Dep>
+					<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
+					<cns:IATA_AircraftType>
+						<cns:IATA_AircraftTypeCode>35J</cns:IATA_AircraftTypeCode>
+					</cns:IATA_AircraftType>
+				</cns:DatedOperatingLeg>
+			</cns:DatedOperatingLegList>
+			<cns:DatedOperatingSegmentList>
+				<cns:DatedOperatingSegment>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedOperatingLegRefID>LEG-1</cns:DatedOperatingLegRefID>
+					<cns:DatedOperatingSegmentId>OPESEG-1</cns:DatedOperatingSegmentId>
+					<cns:Duration>PT6H50M</cns:Duration>
+					<cns:OperatingCarrierFlightNumberText>0015</cns:OperatingCarrierFlightNumberText>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+				</cns:DatedOperatingSegment>
+				<cns:DatedOperatingSegment>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedOperatingLegRefID>LEG-2</cns:DatedOperatingLegRefID>
+					<cns:DatedOperatingSegmentId>OPESEG-2</cns:DatedOperatingSegmentId>
+					<cns:Duration>PT6H50M</cns:Duration>
+					<cns:OperatingCarrierFlightNumberText>0015</cns:OperatingCarrierFlightNumberText>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+				</cns:DatedOperatingSegment>
+			</cns:DatedOperatingSegmentList>
+			<cns:OriginDestList>
+				<cns:OriginDest>
+					<cns:DestCode>LHR</cns:DestCode>
+					<cns:OriginCode>JFK</cns:OriginCode>
+					<cns:OriginDestID>OD-1</cns:OriginDestID>
+					<cns:PaxJourneyRefID>FLT-1</cns:PaxJourneyRefID>
+					<cns:PaxJourneyRefID>FLT-2</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+			</cns:OriginDestList>
+			<cns:PaxJourneyList>
+				<cns:PaxJourney>
+					<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
+					<cns:Duration>PT6H50M</cns:Duration>
+					<cns:PaxJourneyID>FLT-1</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG-1</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+				<cns:PaxJourney>
+					<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
+					<cns:Duration>PT6H50M</cns:Duration>
+					<cns:PaxJourneyID>FLT-2</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>SEG-2</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+			</cns:PaxJourneyList>
+			<cns:PaxList>
+				<cns:Pax>
+					<cns:Individual>
+						<cns:Birthdate>1977-03-15</cns:Birthdate>
+						<cns:GenderCode>M</cns:GenderCode>
+						<cns:GivenName>John</cns:GivenName>
+						<cns:IndividualID>IND-1</cns:IndividualID>
+						<cns:Surname>Doe</cns:Surname>
+						<cns:TitleName>Mr</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>PAX-1</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+				</cns:Pax>
+			</cns:PaxList>
+			<cns:PaxSegmentList>
+				<cns:PaxSegment>
+					<cns:CabinTypeAssociationChoice>
+						<cns:SegmentCabinType>
+							<cns:CabinTypeCode>5</cns:CabinTypeCode>
+							<cns:CabinTypeName>Economy</cns:CabinTypeName>
+						</cns:SegmentCabinType>
+					</cns:CabinTypeAssociationChoice>
+					<cns:DatedMarketingSegmentRefId>MKTSEG-1</cns:DatedMarketingSegmentRefId>
+					<cns:PaxSegmentID>SEG-1</cns:PaxSegmentID>
+				</cns:PaxSegment>
+				<cns:PaxSegment>
+					<cns:CabinTypeAssociationChoice>
+						<cns:SegmentCabinType>
+							<cns:CabinTypeCode>5</cns:CabinTypeCode>
+							<cns:CabinTypeName>Economy</cns:CabinTypeName>
+						</cns:SegmentCabinType>
+					</cns:CabinTypeAssociationChoice>
+					<cns:DatedMarketingSegmentRefId>MKTSEG-2</cns:DatedMarketingSegmentRefId>
+					<cns:PaxSegmentID>SEG-2</cns:PaxSegmentID>
+				</cns:PaxSegment>
+			</cns:PaxSegmentList>
+			<cns:PenaltyList>
+				<cns:Penalty>
+					<cns:DescText>Refund Penalty</cns:DescText>
+					<cns:NetInd>true</cns:NetInd>
+					<cns:PenaltyID>PEN-REFUND</cns:PenaltyID>
+					<cns:Price>
+						<cns:TotalAmount CurCode="USD">10.00</cns:TotalAmount>
+					</cns:Price>
+					<cns:TypeCode>Cancellation</cns:TypeCode>
+				</cns:Penalty>
+				<cns:Penalty>
+					<cns:DescText>Change Penalty</cns:DescText>
+					<cns:NetInd>true</cns:NetInd>
+					<cns:PenaltyID>PEN-CHANGE</cns:PenaltyID>
+					<cns:Price>
+						<cns:TotalAmount CurCode="USD">50.00</cns:TotalAmount>
+					</cns:Price>
+					<cns:TypeCode>Change</cns:TypeCode>
+				</cns:Penalty>
+			</cns:PenaltyList>
+			<cns:PriceClassList>
+				<cns:PriceClass>
+					<!--TODO: Review after Cabin/RBD change-->
+					<cns:CabinType>
+						<cns:CabinTypeCode>5</cns:CabinTypeCode>
+						<cns:CabinTypeName>Economy</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Code>ECOSEMIFLEX</cns:Code>
+					<cns:Name>Economy Semi Flex</cns:Name>
+					<cns:PriceClassID>PRC-1</cns:PriceClassID>
+				</cns:PriceClass>
+				<cns:PriceClass>
+					<!--TODO: Review after Cabin/RBD change-->
+					<cns:CabinType>
+						<cns:CabinTypeCode>5</cns:CabinTypeCode>
+						<cns:CabinTypeName>Economy Flex</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Code>ECOFLEX</cns:Code>
+					<cns:Name>EconomyFlex</cns:Name>
+					<cns:PriceClassID>PRC-2</cns:PriceClassID>
+				</cns:PriceClass>
+			</cns:PriceClassList>
+		</cns:DataLists>
+		<cns:Order>
+			<cns:CreationDateTime>2021-09-21T11:37:00Z</cns:CreationDateTime>
+			<cns:OrderID>XB999A1B2C3D4</cns:OrderID>
+			<cns:OrderVersionNumber>1</cns:OrderVersionNumber>
+			<cns:OwnerCode>XB</cns:OwnerCode>
+			<!--TODO: Add reference to ATSB Codeset ORDERSTATUS-->
+			<cns:StatusCode>OPENED</cns:StatusCode>
+		</cns:Order>
+		<cns:ReshopResults>
+			<cns:ReshopOffers>
+				<cns:RequotedOffer>
+					<cns:AddedOfferItem>
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:Fee>
+								<cns:Amount CurCode="USD">100.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+						</cns:CancelRestrictions>
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:Fee>
+								<cns:Amount CurCode="USD">150.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>After Departure</cns:JourneyStageCode>
+						</cns:CancelRestrictions>
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>false</cns:AllowedModificationInd>
+							<cns:JourneyStageCode>No Show</cns:JourneyStageCode>
+						</cns:CancelRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+							<cns:Fee>
+								<cns:Amount CurCode="USD">0.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>Prior To Departure</cns:JourneyStageCode>
+						</cns:ChangeRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+							<cns:Fee>
+								<cns:Amount CurCode="USD">75.00</cns:Amount>
+							</cns:Fee>
+							<cns:JourneyStageCode>After Departure</cns:JourneyStageCode>
+						</cns:ChangeRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>false</cns:AllowedModificationInd>
+							<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
+							<cns:JourneyStageCode>No Show</cns:JourneyStageCode>
+						</cns:ChangeRestrictions>
+						<cns:ExistingOrderItem>
+							<cns:ExistingService>
+								<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>XB999A1B2C3D4-1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:OfferItemID>XB999-OFFERITEMID-A12B34C56D78E90-EXCHANGE-1</cns:OfferItemID>
+						<cns:PenaltyRefID>PEN-CHANGE</cns:PenaltyRefID>
+						<cns:ReshopPrice>
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>AddCol</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:FareDetail>
+										<cns:FareIndCode>1</cns:FareIndCode>
+										<cns:PaxRefID>PAX-1</cns:PaxRefID>
+										<cns:PenaltyRefID>PEN-CHANGE</cns:PenaltyRefID>
+										<cns:Price>
+											<cns:BaseAmount CurCode="USD">100.00</cns:BaseAmount>
+											<cns:DueToAirlineAmount CurCode="USD">325.00</cns:DueToAirlineAmount>
+											<!-- 100 + 175 + 50 (PENF) -->
+											<cns:TaxSummary>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">0.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>US</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>US</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">0.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>GB</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>GB</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">175.00</cns:Amount>
+													<cns:RefundInd>false</cns:RefundInd>
+													<cns:TaxCode>YQ</cns:TaxCode>
+												</cns:Tax>
+												<cns:TotalRefundableTaxAmount CurCode="USD">0.00</cns:TotalRefundableTaxAmount>
+												<cns:TotalTaxAmount CurCode="USD">175.00</cns:TotalTaxAmount>
+											</cns:TaxSummary>
+											<cns:TotalAmount CurCode="USD">275.00</cns:TotalAmount>
+										</cns:Price>
+									</cns:FareDetail>
+									<cns:Price/>
+								</cns:DiffPrice>
+								<cns:NewPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<!--TODO: Review after Cabin/RBD change-->
+											<cns:CabinType>
+												<cns:CabinTypeCode>5</cns:CabinTypeCode>
+												<cns:CabinTypeName>Economy Flex</cns:CabinTypeName>
+											</cns:CabinType>
+											<cns:FareBasisCityPairText>JFKLHRXB</cns:FareBasisCityPairText>
+											<cns:FareBasisCode>YXBFW</cns:FareBasisCode>
+											<!--TODO: Review after Cancel/Change restrictions added to FareComponent-->
+											<cns:FareRule/>
+											<cns:PaxSegmentRefID>SEG-2</cns:PaxSegmentRefID>
+											<cns:Price>
+												<cns:BaseAmount CurCode="USD">600.00</cns:BaseAmount>
+											</cns:Price>
+											<cns:PriceClassRefID>PRC-2</cns:PriceClassRefID>
+											<!--TODO: Review after Cabin/RBD change-->
+											<cns:RBD>
+												<cns:RBD_Code>J</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FareIndCode>1</cns:FareIndCode>
+										<cns:PaxRefID>PAX-1</cns:PaxRefID>
+										<cns:Price>
+											<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+											<cns:TaxSummary>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">75.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>US</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>US</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">50.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>GB</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>GB</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">175.00</cns:Amount>
+													<cns:RefundInd>false</cns:RefundInd>
+													<cns:TaxCode>YQ</cns:TaxCode>
+												</cns:Tax>
+												<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+												<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+											</cns:TaxSummary>
+											<cns:TotalAmount CurCode="USD">900.00</cns:TotalAmount>
+										</cns:Price>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">175.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+											<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">900.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:FareDetail>
+										<cns:FareComponent>
+											<cns:FareBasisCityPairText>JFKLHRXB</cns:FareBasisCityPairText>
+											<cns:FareBasisCode>YXBOW</cns:FareBasisCode>
+											<!--TODO: Review after Cancel/Change restrictions added to FareComponent-->
+											<cns:FareRule/>
+											<cns:PaxSegmentRefID>SEG-1</cns:PaxSegmentRefID>
+											<cns:Price>
+												<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+											</cns:Price>
+											<cns:PriceClassRefID>PRC-1</cns:PriceClassRefID>
+											<!--TODO: Review after Cabin/RBD change-->
+											<cns:RBD>
+												<cns:RBD_Code>Y</cns:RBD_Code>
+											</cns:RBD>
+										</cns:FareComponent>
+										<cns:FareIndCode>1</cns:FareIndCode>
+										<cns:PaxRefID>PAX-1</cns:PaxRefID>
+										<cns:Price>
+											<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+											<cns:TaxSummary>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">75.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>US</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>US</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">50.00</cns:Amount>
+													<cns:Country>
+														<cns:CountryCode>GB</cns:CountryCode>
+													</cns:Country>
+													<cns:RefundInd>true</cns:RefundInd>
+													<cns:TaxCode>GB</cns:TaxCode>
+												</cns:Tax>
+												<cns:Tax>
+													<cns:Amount CurCode="USD">175.00</cns:Amount>
+													<cns:RefundInd>false</cns:RefundInd>
+													<cns:TaxCode>YQ</cns:TaxCode>
+												</cns:Tax>
+												<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+												<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+											</cns:TaxSummary>
+											<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+										</cns:Price>
+									</cns:FareDetail>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">175.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+											<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>FLT-2</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>PAX-1</cns:PaxRefID>
+							<cns:ServiceID>XB999A1B2C3D4-1-2</cns:ServiceID>
+						</cns:Service>
+					</cns:AddedOfferItem>
+					<cns:DeleteOrderItem>
+						<!-- Delete all associated services -->
+						<cns:ExistingOrderItem>
+							<cns:ExistingService>
+								<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
+								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
+								<cns:ServiceRefID>XB999A1B2C3D4-2-1</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>XB999A1B2C3D4-2</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>XB999-OFFERITEMID-A12B34C56D78E90-REFUNDXBAG-1</cns:OfferItemID>
+						<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+						<cns:PriceDifferential>
+							<cns:DifferentialTypeCode>Refund</cns:DifferentialTypeCode>
+							<cns:DiffPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">-50.00</cns:BaseAmount>
+										<cns:DueByAirlineAmount CurCode="USD">40.00</cns:DueByAirlineAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">-40.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">-50.00</cns:BaseAmount>
+									<cns:DueByAirlineAmount CurCode="USD">40.00</cns:DueByAirlineAmount>
+									<cns:TaxSummary>
+										<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">-40.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:DiffPrice>
+							<cns:NewPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:RefundInd>false</cns:RefundInd>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:NewPrice>
+							<cns:OldPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">50.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">50.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">50.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">50.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:OldPrice>
+						</cns:PriceDifferential>
+					</cns:DeleteOrderItem>
+					<cns:OfferExpirationTimeLimitDateTime>2021-09-24T19:00:00Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>XB999-OFFERID-A12B34C56D78E90-REFUND-EXCHANGE</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+				</cns:RequotedOffer>
+			</cns:ReshopOffers>
+		</cns:ReshopResults>
+		<cns:Warning>
+			<cns:Code>123</cns:Code>
+			<cns:DescText>Dependent services detected please check reshop offer before accepting</cns:DescText>
+			<cns:LangCode>EN</cns:LangCode>
+			<cns:WarningID>123</cns:WarningID>
+		</cns:Warning>
+	</Response>
+</IATA_OrderReshopRS>

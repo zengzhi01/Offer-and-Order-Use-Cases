@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:IATA_SeatAvailabilityRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cns="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersCommon" xmlns:n1="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage" xsi:schemaLocation="http://www.iata.org/IATA/2015/00/2021.1/IATA_OffersAndOrdersMessage ../IATA_SeatAvailabilityRQ.xsd">
+	<n1:DistributionChain>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>1</cns:Ordinal>
+			<cns:OrgRole>Seller</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:Name>ABC Travel</cns:Name>
+				<cns:OrgID>12345678</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+	</n1:DistributionChain>
+	<n1:Request>
+		<cns:SeatAvailibilityCoreRequest>
+			<cns:SeatAvailOfferRequest>
+				<cns:Offer>
+					<cns:OfferID>Offer1</cns:OfferID>
+					<cns:OfferItem>
+						<cns:OfferItemID>OfferItem1</cns:OfferItemID>
+					</cns:OfferItem>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+				</cns:Offer>
+			</cns:SeatAvailOfferRequest>
+		</cns:SeatAvailibilityCoreRequest>
+	</n1:Request>
+</n1:IATA_SeatAvailabilityRQ>
