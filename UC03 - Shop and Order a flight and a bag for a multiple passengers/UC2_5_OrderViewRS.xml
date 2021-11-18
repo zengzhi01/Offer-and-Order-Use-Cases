@@ -413,7 +413,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-10-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -432,8 +431,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2001-10-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2001-10-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
@@ -514,7 +511,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-10-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -532,8 +528,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2001-10-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2001-10-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
@@ -614,7 +608,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-10-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -632,8 +625,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2001-10-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2001-10-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
@@ -713,7 +704,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -731,8 +721,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2021-11-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
@@ -791,7 +779,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -810,8 +797,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2021-11-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
@@ -870,7 +855,6 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -888,8 +872,6 @@
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:ChangeTypeCode>Flight</cns:ChangeTypeCode>
 					<cns:DescText>Change before departure will not incur a change fee</cns:DescText>
-					<cns:EffectiveDateTime>2021-11-17T09:30:47Z</cns:EffectiveDateTime>
-					<cns:ExpirationDateTime>2021-11-17T09:30:47Z</cns:ExpirationDateTime>
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 					</cns:Fee>
