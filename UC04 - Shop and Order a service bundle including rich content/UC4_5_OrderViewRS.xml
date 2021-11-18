@@ -234,9 +234,7 @@
 					<cns:AirlineTaxonomy>
 						<cns:TaxonomyCode>1004</cns:TaxonomyCode>
 					</cns:AirlineTaxonomy>
-					<cns:DepositTimeLimitDateTime>2021-11-17T09:30:47Z</cns:DepositTimeLimitDateTime>
 					<cns:Name>First additional Bag - up to 23kg</cns:Name>
-					<cns:NamingTimeLimitDateTime>2021-11-17T09:30:47Z</cns:NamingTimeLimitDateTime>
 					<cns:OwnerCode>0A</cns:OwnerCode>
 					<cns:RFIC>A</cns:RFIC>
 					<cns:RFISC>0AA</cns:RFISC>
@@ -350,7 +348,7 @@
 				<cns:PaymentTimeLimitDateTime>2021-11-15T09:30:47Z</cns:PaymentTimeLimitDateTime>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">9050</cns:BaseAmount>
-					<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
+					<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-15T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
 					<cns:TaxSummary>
 						<cns:Tax>
 							<cns:Amount CurCode="NUC">1000</cns:Amount>
@@ -424,13 +422,13 @@
 				<cns:PaymentTimeLimitDateTime>2021-11-15T09:30:47Z</cns:PaymentTimeLimitDateTime>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">230</cns:BaseAmount>
-					<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
+					<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-15T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
 					<cns:TaxSummary>
 						<cns:TotalTaxAmount CurCode="NUC">0</cns:TotalTaxAmount>
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">230</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-15T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:BookingRef>
 						<cns:BookingID>XBABC</cns:BookingID>
@@ -474,9 +472,9 @@
 			<cns:StatusCode>OPEN</cns:StatusCode>
 			<cns:TotalPrice> <!-- This will be optional on a partially paid order -->
 				<cns:BaseAmount CurCode="NUC">9280</cns:BaseAmount>
-				<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
+				<cns:BaseAmountGuaranteeTimeLimitDateTime>2021-11-15T09:30:47Z</cns:BaseAmountGuaranteeTimeLimitDateTime>
 				<cns:TaxSummary>
-					<cns:GuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:GuaranteeTimeLimitDateTime>
+					<cns:GuaranteeTimeLimitDateTime>2021-11-15T09:30:47Z</cns:GuaranteeTimeLimitDateTime>
 					<cns:Tax>
 						<cns:Amount CurCode="NUC">1000</cns:Amount>
 						<cns:QualifierCode>YQ</cns:QualifierCode>
