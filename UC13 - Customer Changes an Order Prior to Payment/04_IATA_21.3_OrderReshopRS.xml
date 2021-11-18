@@ -1,0 +1,1503 @@
+<n1:IATA_OrderReshopRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n2="http://www.altova.com/samplexml/other-namespace" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/arodriguez/Downloads/Enhanced-and-Simplified-Distribution-Schema-Development-main/IATA_OrderReshopRS.xsd">
+	<n1:Response>
+		<cns:DataLists>
+			<cns:BaggageAllowanceList>
+				<cns:BaggageAllowance>
+					<cns:BaggageAllowanceID>BAB606E94A</cns:BaggageAllowanceID>
+					<cns:BDC>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					</cns:BDC>
+					<cns:DescText>CHECKED ALLOWANCE</cns:DescText>
+					<cns:PieceAllowance>
+						<cns:TotalQty>1</cns:TotalQty>
+					</cns:PieceAllowance>
+					<cns:TypeCode>Checked</cns:TypeCode>
+				</cns:BaggageAllowance>
+				<cns:BaggageAllowance>
+					<cns:ApplicablePartyText>Traveler</cns:ApplicablePartyText>
+					<cns:BaggageAllowanceID>BAFC4910EE-CO</cns:BaggageAllowanceID>
+					<cns:BDC>
+						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					</cns:BDC>
+					<cns:DescText>CARRYON HAND BAGGAGE ALLOWANCE</cns:DescText>
+					<cns:DescText>CARRY ON HAND BAGGAGE</cns:DescText>
+					<cns:DescText>CARRY ON UP TO 45 LI</cns:DescText>
+					<cns:PieceAllowance>
+						<cns:TotalQty>1</cns:TotalQty>
+					</cns:PieceAllowance>
+					<cns:TypeCode>CarryOn</cns:TypeCode>
+				</cns:BaggageAllowance>
+			</cns:BaggageAllowanceList>
+			<cns:BaggageDisclosureList>
+				<cns:BaggageDisclosure>
+					<cns:BaggageDisclosureID>BaggageKey-1</cns:BaggageDisclosureID>
+					<cns:DescText>Subject to US DOT Reservation and Disclosure at time of fare quote and ticketing</cns:DescText>
+					<cns:RuleTypeCode>Y</cns:RuleTypeCode>
+				</cns:BaggageDisclosure>
+			</cns:BaggageDisclosureList>
+			<cns:ContactInfoList>
+				<cns:ContactInfo>
+					<cns:ContactInfoID>CID1</cns:ContactInfoID>
+					<cns:EmailAddress>
+						<cns:ContactTypeText>Email</cns:ContactTypeText>
+						<cns:EmailAddressText>NDCS@FARELOGIX.COM</cns:EmailAddressText>
+					</cns:EmailAddress>
+					<cns:Phone>
+						<cns:ContactTypeText>Mobile</cns:ContactTypeText>
+						<cns:PhoneNumber>17865554433</cns:PhoneNumber>
+					</cns:Phone>
+					<cns:PostalAddress>
+						<cns:BuildingRoomText>212</cns:BuildingRoomText>
+						<cns:CityName>MIAMI</cns:CityName>
+						<cns:CountryCode>US</cns:CountryCode>
+						<cns:CountryName>UNITED STATES</cns:CountryName>
+						<cns:PostalCode>33160</cns:PostalCode>
+						<cns:StreetText>123 STREET</cns:StreetText>
+					</cns:PostalAddress>
+				</cns:ContactInfo>
+			</cns:ContactInfoList>
+			<cns:DatedMarketingSegmentList>
+				<cns:DatedMarketingSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-02-28T09:20:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+					</cns:Arrival>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>Testing Airlines</cns:CarrierName>
+					<cns:DatedMarketingSegmentId>Segment100003</cns:DatedMarketingSegmentId>
+					<cns:DatedOperatingSegmentRefId>Oper100000130</cns:DatedOperatingSegmentRefId>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-02-27T21:30:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:Dep>
+					<cns:MarketingCarrierFlightNumberText>6927</cns:MarketingCarrierFlightNumberText>
+				</cns:DatedMarketingSegment>
+				<cns:DatedMarketingSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-03-08T19:30:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:Arrival>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>Testing Airlines</cns:CarrierName>
+					<cns:DatedMarketingSegmentId>Segment100004</cns:DatedMarketingSegmentId>
+					<cns:DatedOperatingSegmentRefId>Oper100000140</cns:DatedOperatingSegmentRefId>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-03-08T16:20:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+					</cns:Dep>
+					<cns:MarketingCarrierFlightNumberText>6926</cns:MarketingCarrierFlightNumberText>
+				</cns:DatedMarketingSegment>
+			</cns:DatedMarketingSegmentList>
+			<cns:DatedOperatingSegmentList>
+				<cns:DatedOperatingSegment>
+					<cns:CarrierDesigCode>XY</cns:CarrierDesigCode>
+					<cns:CarrierName>Test Airways</cns:CarrierName>
+					<cns:DatedOperatingSegmentId>Oper100000130</cns:DatedOperatingSegmentId>
+					<cns:OperatingCarrierFlightNumberText>0114</cns:OperatingCarrierFlightNumberText>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+				</cns:DatedOperatingSegment>
+				<cns:DatedOperatingSegment>
+					<cns:CarrierDesigCode>XY</cns:CarrierDesigCode>
+					<cns:CarrierName>Test Airways</cns:CarrierName>
+					<cns:DatedOperatingSegmentId>Oper100000140</cns:DatedOperatingSegmentId>
+					<cns:OperatingCarrierFlightNumberText>113</cns:OperatingCarrierFlightNumberText>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+				</cns:DatedOperatingSegment>
+			</cns:DatedOperatingSegmentList>
+			<cns:OriginDestList>
+				<cns:OriginDest>
+					<cns:DestCode>LHR</cns:DestCode>
+					<cns:OriginCode>JFK</cns:OriginCode>
+					<cns:OriginDestID>OD1</cns:OriginDestID>
+					<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+				<cns:OriginDest>
+					<cns:DestCode>JFK</cns:DestCode>
+					<cns:OriginCode>LHR</cns:OriginCode>
+					<cns:OriginDestID>OD2</cns:OriginDestID>
+					<cns:PaxJourneyRefID>F2</cns:PaxJourneyRefID>
+				</cns:OriginDest>
+			</cns:OriginDestList>
+			<cns:PaxJourneyList>
+				<cns:PaxJourney>
+					<cns:PaxJourneyID>F1</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+				<cns:PaxJourney>
+					<cns:PaxJourneyID>F2</cns:PaxJourneyID>
+					<cns:PaxSegmentRefID>S2</cns:PaxSegmentRefID>
+				</cns:PaxJourney>
+			</cns:PaxJourneyList>
+			<cns:PaxList>
+				<cns:Pax>
+					<cns:ContactInfoRefID>CID1</cns:ContactInfoRefID>
+					<cns:Individual>
+						<cns:Birthdate>1977-03-01</cns:Birthdate>
+						<cns:GenderCode>M</cns:GenderCode>
+						<cns:GivenName>DAVE</cns:GivenName>
+						<cns:IndividualID>IND1</cns:IndividualID>
+						<cns:Surname>BROWN</cns:Surname>
+						<cns:TitleName>MR</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>T1</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+					<cns:ResidenceCountryCode>US</cns:ResidenceCountryCode>
+				</cns:Pax>
+				<cns:Pax>
+					<cns:Individual>
+						<cns:Birthdate>2021-05-10</cns:Birthdate>
+						<cns:GenderCode>M</cns:GenderCode>
+						<cns:GivenName>DAVID</cns:GivenName>
+						<cns:Surname>DOE</cns:Surname>
+					</cns:Individual>
+					<cns:PaxID>T1.1</cns:PaxID>
+					<cns:PTC>INF</cns:PTC>
+					<cns:Remark>
+						<cns:RemarkText>This is T1.1</cns:RemarkText>
+					</cns:Remark>
+					<cns:ResidenceCountryCode>US</cns:ResidenceCountryCode>
+				</cns:Pax>
+				<cns:Pax>
+					<cns:Individual>
+						<cns:Birthdate>1981-03-01</cns:Birthdate>
+						<cns:GenderCode>F</cns:GenderCode>
+						<cns:GivenName>JANE</cns:GivenName>
+						<cns:Surname>DOE</cns:Surname>
+						<cns:TitleName>MS</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>T2</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+					<cns:Remark>
+						<cns:RemarkText>This is T2</cns:RemarkText>
+					</cns:Remark>
+					<cns:ResidenceCountryCode>US</cns:ResidenceCountryCode>
+				</cns:Pax>
+				<cns:Pax>
+					<cns:Individual>
+						<cns:Birthdate>2015-05-24</cns:Birthdate>
+						<cns:GenderCode>F</cns:GenderCode>
+						<cns:GivenName>JANETTE</cns:GivenName>
+						<cns:Surname>DOE</cns:Surname>
+						<cns:TitleName>MS</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>T3</cns:PaxID>
+					<cns:PTC>CNN</cns:PTC>
+					<cns:Remark>
+						<cns:RemarkText>This is T3</cns:RemarkText>
+					</cns:Remark>
+					<cns:ResidenceCountryCode>US</cns:ResidenceCountryCode>
+				</cns:Pax>
+			</cns:PaxList>
+			<cns:PaxSegmentList>
+				<cns:PaxSegment>
+					<cns:DatedMarketingSegmentRefId>Segment100003</cns:DatedMarketingSegmentRefId>
+					<cns:PaxSegmentID>S1</cns:PaxSegmentID>
+				</cns:PaxSegment>
+				<cns:PaxSegment>
+					<cns:DatedMarketingSegmentRefId>Segment100004</cns:DatedMarketingSegmentRefId>
+					<cns:PaxSegmentID>S2</cns:PaxSegmentID>
+				</cns:PaxSegment>
+			</cns:PaxSegmentList>
+			<cns:PriceClassList>
+				<cns:PriceClass>
+					<cns:CabinType>
+						<cns:CabinTypeName>BasicEconomy</cns:CabinTypeName>
+					</cns:CabinType>
+					<cns:Code>AAAT-BASIC</cns:Code>
+					<cns:Name>Basic Economy</cns:Name>
+					<cns:PriceClassID>BasicEconomy</cns:PriceClassID>
+				</cns:PriceClass>
+			</cns:PriceClassList>
+			<cns:ServiceDefinitionList>
+				<cns:ServiceDefinition>
+					<cns:BookingInstructions>
+						<cns:MethodText>API</cns:MethodText>
+					</cns:BookingInstructions>
+					<cns:Desc>
+						<cns:DescText>Food and Beverages</cns:DescText>
+					</cns:Desc>
+					<cns:Desc>
+						<cns:DescText>Incuded</cns:DescText>
+					</cns:Desc>
+					<cns:Name>Food and Beverages</cns:Name>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:RFIC>A</cns:RFIC>
+					<cns:RFISC>OC</cns:RFISC>
+					<cns:ServiceCode>FNB</cns:ServiceCode>
+					<cns:ServiceDefinitionID>A-OC-FNB</cns:ServiceDefinitionID>
+				</cns:ServiceDefinition>
+				<cns:ServiceDefinition>
+					<cns:Name>Carry On Bag Allowance</cns:Name>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:RFIC>C</cns:RFIC>
+					<cns:ServiceCode>XBAG</cns:ServiceCode>
+					<cns:ServiceDefinitionAssociation>
+						<cns:BaggageAllowanceRef>
+							<cns:BaggageAllowanceRefID>BAFC4910EE-CO</cns:BaggageAllowanceRefID>
+						</cns:BaggageAllowanceRef>
+					</cns:ServiceDefinitionAssociation>
+					<cns:ServiceDefinitionID>BASRV22955692-CO</cns:ServiceDefinitionID>
+				</cns:ServiceDefinition>
+				<cns:ServiceDefinition>
+					<cns:Name>Checked Bag Allowance</cns:Name>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:RFIC>C</cns:RFIC>
+					<cns:ServiceCode>XBAG</cns:ServiceCode>
+					<cns:ServiceDefinitionAssociation>
+						<cns:BaggageAllowanceRef>
+							<cns:BaggageAllowanceRefID>BAB606E94A</cns:BaggageAllowanceRefID>
+						</cns:BaggageAllowanceRef>
+					</cns:ServiceDefinitionAssociation>
+					<cns:ServiceDefinitionID>BASRVEFE85AB</cns:ServiceDefinitionID>
+				</cns:ServiceDefinition>
+			</cns:ServiceDefinitionList>
+		</cns:DataLists>
+		<cns:Order>
+			<cns:OrderID>XB999E54F8694</cns:OrderID>
+			<cns:OwnerCode>XB</cns:OwnerCode>
+		</cns:Order>
+		<cns:ReshopResults>
+			<cns:ReshopOffers>
+				<cns:Offer>
+					<cns:AddedOfferItem>
+						<cns:ExistingOrderItem>
+							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:FareDetail>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">150.50</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">5.60</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+											<cns:TaxCode>AY</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">200.00</cns:Amount>
+											<cns:DescText>Airline own use only</cns:DescText>
+											<cns:TaxCode>YR</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">19.10</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">4.50</cns:Amount>
+											<cns:CollectionPointTax>
+												<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+												<cns:Station>
+													<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+												</cns:Station>
+											</cns:CollectionPointTax>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+											<cns:TaxCode>XF</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">229.20</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">379.70</cns:TotalAmount>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S2</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">150.50</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">5.60</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+											<cns:TaxCode>AY</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">200.00</cns:Amount>
+											<cns:DescText>Airline own use only</cns:DescText>
+											<cns:TaxCode>YR</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">19.10</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">4.50</cns:Amount>
+											<cns:CollectionPointTax>
+												<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+												<cns:Station>
+													<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+												</cns:Station>
+											</cns:CollectionPointTax>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+											<cns:TaxCode>XF</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">229.20</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareIndCode>0</cns:FareIndCode>
+							<cns:FarePriceType>
+								<cns:FarePriceTypeCode>Net</cns:FarePriceTypeCode>
+								<cns:Price/>
+							</cns:FarePriceType>
+							<cns:FareRefText>?pXTura@okavjplIVu6TPHraHG0g7Uh0Hx1yqNkvbR.H~D~D~D~D~DORB?CR.RMM/.0-QLNH4.4-FG@R.PNLN1144-SWOCOphad-CCO()LXA.?QP)(KMM8E@B~IPJV5E5L3~J~hHR@*ssMiRsUzefue*flxKey</cns:FareRefText>
+							<cns:PaxRefID>T1</cns:PaxRefID>
+							<cns:PaxRefID>T2</cns:PaxRefID>
+							<cns:Price>
+								<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+								<cns:TaxSummary>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">5.60</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+										<cns:TaxCode>AY</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">400.00</cns:Amount>
+										<cns:DescText>Airline own use only</cns:DescText>
+										<cns:TaxCode>YR</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">19.10</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+										<cns:TaxCode>US</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">4.50</cns:Amount>
+										<cns:CollectionPointTax>
+											<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+											<cns:Station>
+												<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+											</cns:Station>
+										</cns:CollectionPointTax>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+										<cns:TaxCode>XF</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">3.96</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S Agriculture Fee</cns:DescText>
+										<cns:TaxCode>XA</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">55.60</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">55.60</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:DescText>Passenger Service Charge</cns:DescText>
+										<cns:TaxCode>UB</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">5.99</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>Customs User Fee</cns:DescText>
+										<cns:TaxCode>YC</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">110.90</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">110.90</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+										<cns:TaxCode>GB</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">12.30</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">12.30</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:TaxCode>R1</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">7.00</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+										<cns:TaxCode>XY</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">19.10</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+										<cns:TaxCode>US</cns:TaxCode>
+									</cns:Tax>
+									<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+								</cns:TaxSummary>
+								<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+							</cns:Price>
+						</cns:FareDetail>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>R39D6D643-B562-428F-B4FB-1-1</cns:OfferItemID>
+						<cns:OwnerCode>XB</cns:OwnerCode>
+						<cns:ReshopPrice>
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>EvenExchange</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">00.00</cns:BaseAmount>
+										<cns:DueToAirlineAmount CurCode="USD">00.00</cns:DueToAirlineAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">00.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:DiffPrice>
+								<cns:NewPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+												<cns:TaxCode>AY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">400.00</cns:Amount>
+												<cns:DescText>Airline own use only</cns:DescText>
+												<cns:TaxCode>YR</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">4.50</cns:Amount>
+												<cns:CollectionPointTax>
+													<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+													<cns:Station>
+														<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+													</cns:Station>
+												</cns:CollectionPointTax>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+												<cns:TaxCode>XF</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">3.96</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Agriculture Fee</cns:DescText>
+												<cns:TaxCode>XA</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">55.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">55.60</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Passenger Service Charge</cns:DescText>
+												<cns:TaxCode>UB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.99</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Customs User Fee</cns:DescText>
+												<cns:TaxCode>YC</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">110.90</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">110.90</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">12.30</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">12.30</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:TaxCode>R1</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">7.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+												<cns:TaxCode>XY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+												<cns:TaxCode>AY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">400.00</cns:Amount>
+												<cns:DescText>Airline own use only</cns:DescText>
+												<cns:TaxCode>YR</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">4.50</cns:Amount>
+												<cns:CollectionPointTax>
+													<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+													<cns:Station>
+														<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+													</cns:Station>
+												</cns:CollectionPointTax>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+												<cns:TaxCode>XF</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">3.96</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Agriculture Fee</cns:DescText>
+												<cns:TaxCode>XA</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">55.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">55.60</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Passenger Service Charge</cns:DescText>
+												<cns:TaxCode>UB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.99</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Customs User Fee</cns:DescText>
+												<cns:TaxCode>YC</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">110.90</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">110.90</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">12.30</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">12.30</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:TaxCode>R1</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">7.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+												<cns:TaxCode>XY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:OfferFlightAssociations>
+										<cns:PaxSegmentReferences>
+											<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+										</cns:PaxSegmentReferences>
+									</cns:OfferFlightAssociations>
+									<cns:ServiceDefinitionRefID>A-OC-FNB</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T1</cns:PaxRefID>
+							<cns:ServiceID>INCLUDEDSRV1-T1</cns:ServiceID>
+						</cns:Service>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:OfferFlightAssociations>
+										<cns:PaxSegmentReferences>
+											<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+										</cns:PaxSegmentReferences>
+									</cns:OfferFlightAssociations>
+									<cns:ServiceDefinitionRefID>A-OC-FNB</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T2</cns:PaxRefID>
+							<cns:ServiceID>INCLUDEDSRV1-T2</cns:ServiceID>
+						</cns:Service>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T1 T2</cns:PaxRefID>
+							<cns:ServiceID>ServiceID1</cns:ServiceID>
+						</cns:Service>
+					</cns:AddedOfferItem>
+					<cns:AddedOfferItem>
+						<cns:ExistingOrderItem>
+							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-2</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:FareDetail>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">00.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">00.00</cns:TotalAmount>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S2</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">00.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">00.00</cns:TotalAmount>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareIndCode>0</cns:FareIndCode>
+							<cns:FarePriceType>
+								<cns:FarePriceTypeCode>Net</cns:FarePriceTypeCode>
+								<cns:Price/>
+							</cns:FarePriceType>
+							<cns:FareRefText>?pXTura@okavjplIVu6TPHraHG0g7Uh0Hx1yqNkvbR.H~D~D~D~D~DORB?CR.RMM/.0-QLNH4.4-FG@R.PNLN1144-SWOCOphad-CCO()LXA.?QP)(KMM8E@B~IPJV5E5L3~J~hHR@*ssMiRsUzefue*flxKey</cns:FareRefText>
+							<cns:PaxRefID>T1.1</cns:PaxRefID>
+							<cns:Price>
+								<cns:BaseAmount CurCode="NUC">00.00</cns:BaseAmount>
+								<cns:TaxSummary>
+									<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+								</cns:TaxSummary>
+								<cns:TotalAmount CurCode="USD">00.00</cns:TotalAmount>
+							</cns:Price>
+						</cns:FareDetail>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>R39D6D643-B562-428F-B4FB-1-2</cns:OfferItemID>
+						<cns:OwnerCode>XB</cns:OwnerCode>
+						<cns:ReshopPrice>
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>EvenExchange</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">00.00</cns:BaseAmount>
+										<cns:DueToAirlineAmount CurCode="USD">00.00</cns:DueToAirlineAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:DiffPrice>
+								<cns:NewPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">00.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">00.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:OfferFlightAssociations>
+										<cns:PaxSegmentReferences>
+											<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+										</cns:PaxSegmentReferences>
+									</cns:OfferFlightAssociations>
+									<cns:ServiceDefinitionRefID>A-OC-FNB</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T1.1</cns:PaxRefID>
+							<cns:ServiceID>INCLUDEDSRV1-T1.1</cns:ServiceID>
+						</cns:Service>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T1.1</cns:PaxRefID>
+							<cns:ServiceID>ServiceID2</cns:ServiceID>
+						</cns:Service>
+					</cns:AddedOfferItem>
+					<cns:AddedOfferItem>
+						<cns:ExistingOrderItem>
+							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-3</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:FareDetail>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">150.50</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">5.60</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+											<cns:TaxCode>AY</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">200.00</cns:Amount>
+											<cns:DescText>Airline own use only</cns:DescText>
+											<cns:TaxCode>YR</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">19.10</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">4.50</cns:Amount>
+											<cns:CollectionPointTax>
+												<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+												<cns:Station>
+													<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+												</cns:Station>
+											</cns:CollectionPointTax>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+											<cns:TaxCode>XF</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">229.20</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">379.70</cns:TotalAmount>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareComponent>
+								<cns:CabinType>
+									<cns:CabinTypeCode>1</cns:CabinTypeCode>
+									<cns:CabinTypeName>COACH</cns:CabinTypeName>
+								</cns:CabinType>
+								<cns:FareBasisCityPairText>NYCLONXB</cns:FareBasisCityPairText>
+								<cns:FareBasisCode>ABC123D4</cns:FareBasisCode>
+								<cns:PaxSegmentRefID>S2</cns:PaxSegmentRefID>
+								<cns:Price>
+									<cns:BaseAmount CurCode="NUC">150.50</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">5.60</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+											<cns:TaxCode>AY</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">200.00</cns:Amount>
+											<cns:DescText>Airline own use only</cns:DescText>
+											<cns:TaxCode>YR</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">19.10</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">4.50</cns:Amount>
+											<cns:CollectionPointTax>
+												<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+												<cns:Station>
+													<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+												</cns:Station>
+											</cns:CollectionPointTax>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+											<cns:TaxCode>XF</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">229.20</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+								</cns:Price>
+								<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+								<cns:RBD>
+									<cns:RBD_Code>M</cns:RBD_Code>
+								</cns:RBD>
+							</cns:FareComponent>
+							<cns:FareIndCode>0</cns:FareIndCode>
+							<cns:FarePriceType>
+								<cns:FarePriceTypeCode>Net</cns:FarePriceTypeCode>
+								<cns:Price/>
+							</cns:FarePriceType>
+							<cns:FareRefText>?pXTura@okavjplIVu6TPHraHG0g7Uh0Hx1yqNkvbR.H~D~D~D~D~DORB?CR.RMM/.0-QLNH4.4-FG@R.PNLN1144-SWOCOphad-CCO()LXA.?QP)(KMM8E@B~IPJV5E5L3~J~hHR@*ssMiRsUzefue*flxKey</cns:FareRefText>
+							<cns:PaxRefID>T3</cns:PaxRefID>
+							<cns:Price>
+								<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+								<cns:TaxSummary>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">5.60</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+										<cns:TaxCode>AY</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">400.00</cns:Amount>
+										<cns:DescText>Airline own use only</cns:DescText>
+										<cns:TaxCode>YR</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">19.10</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+										<cns:TaxCode>US</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">4.50</cns:Amount>
+										<cns:CollectionPointTax>
+											<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+											<cns:Station>
+												<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+											</cns:Station>
+										</cns:CollectionPointTax>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+										<cns:TaxCode>XF</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">3.96</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S Agriculture Fee</cns:DescText>
+										<cns:TaxCode>XA</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">55.60</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">55.60</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:DescText>Passenger Service Charge</cns:DescText>
+										<cns:TaxCode>UB</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">5.99</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>Customs User Fee</cns:DescText>
+										<cns:TaxCode>YC</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">110.90</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">110.90</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+										<cns:TaxCode>GB</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">12.30</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>GB</cns:CountryCode>
+										</cns:Country>
+										<cns:CurConversion>
+											<cns:Amount CurCode="USD">12.30</cns:Amount>
+											<cns:ConversionRate>1.386</cns:ConversionRate>
+											<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+										</cns:CurConversion>
+										<cns:TaxCode>R1</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">7.00</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+										<cns:TaxCode>XY</cns:TaxCode>
+									</cns:Tax>
+									<cns:Tax>
+										<cns:Amount CurCode="USD">19.10</cns:Amount>
+										<cns:Country>
+											<cns:CountryCode>US</cns:CountryCode>
+										</cns:Country>
+										<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+										<cns:TaxCode>US</cns:TaxCode>
+									</cns:Tax>
+									<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+								</cns:TaxSummary>
+								<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+							</cns:Price>
+						</cns:FareDetail>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>R39D6D643-B562-428F-B4FB-1-3</cns:OfferItemID>
+						<cns:OwnerCode>XB</cns:OwnerCode>
+						<cns:ReshopPrice>
+							<cns:PriceDifferential>
+								<cns:DifferentialTypeCode>EvenExchange</cns:DifferentialTypeCode>
+								<cns:DiffPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">00.00</cns:BaseAmount>
+										<cns:DueToAirlineAmount CurCode="USD">00.00</cns:DueToAirlineAmount>
+										<cns:TaxSummary>
+											<cns:TotalTaxAmount CurCode="USD">00.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:DiffPrice>
+								<cns:NewPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+												<cns:TaxCode>AY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">400.00</cns:Amount>
+												<cns:DescText>Airline own use only</cns:DescText>
+												<cns:TaxCode>YR</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">4.50</cns:Amount>
+												<cns:CollectionPointTax>
+													<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+													<cns:Station>
+														<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+													</cns:Station>
+												</cns:CollectionPointTax>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+												<cns:TaxCode>XF</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">3.96</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Agriculture Fee</cns:DescText>
+												<cns:TaxCode>XA</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">55.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">55.60</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Passenger Service Charge</cns:DescText>
+												<cns:TaxCode>UB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.99</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Customs User Fee</cns:DescText>
+												<cns:TaxCode>YC</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">110.90</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">110.90</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">12.30</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">12.30</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:TaxCode>R1</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">7.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+												<cns:TaxCode>XY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+									</cns:Price>
+								</cns:NewPrice>
+								<cns:OldPrice>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">301.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Passenger Civil Aviation Security Service Fee</cns:DescText>
+												<cns:TaxCode>AY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">400.00</cns:Amount>
+												<cns:DescText>Airline own use only</cns:DescText>
+												<cns:TaxCode>YR</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">4.50</cns:Amount>
+												<cns:CollectionPointTax>
+													<cns:AirportAmount CurCode="USD">4.50</cns:AirportAmount>
+													<cns:Station>
+														<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+													</cns:Station>
+												</cns:CollectionPointTax>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Passenger Facility Charge</cns:DescText>
+												<cns:TaxCode>XF</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">3.96</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S Agriculture Fee</cns:DescText>
+												<cns:TaxCode>XA</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">55.60</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">55.60</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">40.12</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Passenger Service Charge</cns:DescText>
+												<cns:TaxCode>UB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">5.99</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>Customs User Fee</cns:DescText>
+												<cns:TaxCode>YC</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">110.90</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">110.90</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">80.00</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:DescText>Air Passenger Duty (APD) International</cns:DescText>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">12.30</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:CurConversion>
+													<cns:Amount CurCode="USD">12.30</cns:Amount>
+													<cns:ConversionRate>1.386</cns:ConversionRate>
+													<cns:LocalAmount CurCode="GBP">8.90</cns:LocalAmount>
+												</cns:CurConversion>
+												<cns:TaxCode>R1</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">7.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Immigration User Fee</cns:DescText>
+												<cns:TaxCode>XY</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">19.10</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:DescText>U.S.A Transportation Tax</cns:DescText>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">644.05</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">945.05</cns:TotalAmount>
+									</cns:Price>
+								</cns:OldPrice>
+							</cns:PriceDifferential>
+						</cns:ReshopPrice>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:OfferFlightAssociations>
+										<cns:PaxSegmentReferences>
+											<cns:PaxSegmentRefID>S1</cns:PaxSegmentRefID>
+										</cns:PaxSegmentReferences>
+									</cns:OfferFlightAssociations>
+									<cns:ServiceDefinitionRefID>A-OC-FNB</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>T3</cns:PaxRefID>
+							<cns:ServiceID>INCLUDEDSRV1-T3</cns:ServiceID>
+						</cns:Service>
+						<cns:Service>
+							<cns:OfferServiceAssociation>
+								<cns:PaxJourneyRef>
+									<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+								</cns:PaxJourneyRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>3</cns:PaxRefID>
+							<cns:ServiceID>ServiceID3</cns:ServiceID>
+						</cns:Service>
+					</cns:AddedOfferItem>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAFC4910EE-CO</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T1</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAFC4910EE-CO</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T2</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAFC4910EE-CO</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T3</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAB606E94A</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T1</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAB606E94A</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T2</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:BaggageAssociations>
+						<cns:BaggageAllowanceRefID>BAB606E94A</cns:BaggageAllowanceRefID>
+						<cns:OfferFlightAssociations>
+							<cns:PaxJourneyRef>
+								<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							</cns:PaxJourneyRef>
+						</cns:OfferFlightAssociations>
+						<cns:PaxRefID>T3</cns:PaxRefID>
+					</cns:BaggageAssociations>
+					<cns:DisclosureRefID>BaggageKey-1</cns:DisclosureRefID>
+					<cns:JourneyOverview>
+						<cns:JourneyPriceClass>
+							<cns:PaxJourneyRefID>F2</cns:PaxJourneyRefID>
+							<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+						</cns:JourneyPriceClass>
+						<cns:JourneyPriceClass>
+							<cns:PaxJourneyRefID>F1</cns:PaxJourneyRefID>
+							<cns:PriceClassRefID>BasicEconomy</cns:PriceClassRefID>
+						</cns:JourneyPriceClass>
+					</cns:JourneyOverview>
+					<cns:OfferExpirationTimeLimitDateTime>2021-12-16T21:58:06Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>R39D6D643-B562-428F-B4FB-1</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:PTC_OfferParameters>
+						<cns:PaxRefID>T1</cns:PaxRefID>
+						<cns:PaxRefID>T2</cns:PaxRefID>
+						<cns:PricedPaxNumber>2</cns:PricedPaxNumber>
+						<cns:PTC_PricedCode>ADT</cns:PTC_PricedCode>
+						<cns:PTC_RequestedCode>ADT</cns:PTC_RequestedCode>
+						<cns:RequestedPaxNumber>2</cns:RequestedPaxNumber>
+					</cns:PTC_OfferParameters>
+					<cns:PTC_OfferParameters>
+						<cns:PaxRefID>T1.1</cns:PaxRefID>
+						<cns:PricedPaxNumber>1</cns:PricedPaxNumber>
+						<cns:PTC_PricedCode>INF</cns:PTC_PricedCode>
+						<cns:PTC_RequestedCode>INF</cns:PTC_RequestedCode>
+						<cns:RequestedPaxNumber>1</cns:RequestedPaxNumber>
+					</cns:PTC_OfferParameters>
+					<cns:PTC_OfferParameters>
+						<cns:PaxRefID>T3</cns:PaxRefID>
+						<cns:PricedPaxNumber>1</cns:PricedPaxNumber>
+						<cns:PTC_PricedCode>CNN</cns:PTC_PricedCode>
+						<cns:PTC_RequestedCode>CNN</cns:PTC_RequestedCode>
+						<cns:RequestedPaxNumber>1</cns:RequestedPaxNumber>
+					</cns:PTC_OfferParameters>
+					<cns:TotalPrice>
+						<cns:TotalAmount CurCode="USD">1890.10</cns:TotalAmount>
+					</cns:TotalPrice>
+					<cns:ValidatingCarrierCode>XB</cns:ValidatingCarrierCode>
+				</cns:Offer>
+			</cns:ReshopOffers>
+		</cns:ReshopResults>
+	</n1:Response>
+</n1:IATA_OrderReshopRS>
