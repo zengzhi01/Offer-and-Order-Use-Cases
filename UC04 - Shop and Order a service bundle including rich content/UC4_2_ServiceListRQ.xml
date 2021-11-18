@@ -20,9 +20,6 @@
 					<cns:OfferItem>
 						<cns:OfferItemID>OfferItem1</cns:OfferItemID>
 					</cns:OfferItem>
-					<cns:OfferItem>
-						<cns:OfferItemID>OfferItem2</cns:OfferItemID>
-					</cns:OfferItem>
 					<cns:OwnerCode>XB</cns:OwnerCode>
 				</cns:Offer>
 			</cns:OfferRequest>
