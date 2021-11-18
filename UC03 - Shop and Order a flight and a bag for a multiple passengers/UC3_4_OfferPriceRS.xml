@@ -242,7 +242,7 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2031-10-17T09:30:47Z</cns:EffectiveDateTime>
+					
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -296,6 +296,11 @@
 				<cns:MandatoryInd>true</cns:MandatoryInd>
 				<cns:OfferItemID>Pax1-OfferItem1</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">900</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -308,7 +313,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">1000</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:PaxJourneyRef>
@@ -324,7 +329,7 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2031-10-17T09:30:47Z</cns:EffectiveDateTime>
+					
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -378,6 +383,11 @@
 				<cns:MandatoryInd>true</cns:MandatoryInd>
 				<cns:OfferItemID>Pax2-OfferItem2</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">900</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -390,7 +400,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">1000</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:PaxJourneyRef>
@@ -406,7 +416,7 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2031-10-17T09:30:47Z</cns:EffectiveDateTime>
+					
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -462,6 +472,11 @@
 				<cns:MandatoryInd>true</cns:MandatoryInd>
 				<cns:OfferItemID>INF-OfferItem3</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">100</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -474,7 +489,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">110</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:PaxJourneyRef>
@@ -490,7 +505,7 @@
 				<cns:CancelRestrictions>
 					<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
 					<cns:DescText>Cancellations after departure are permitted.</cns:DescText>
-					<cns:EffectiveDateTime>2031-10-17T09:30:47Z</cns:EffectiveDateTime>
+					
 					<cns:Fee>
 						<cns:Amount CurCode="NUC">0</cns:Amount>
 						<cns:ApproximateInd>true</cns:ApproximateInd>
@@ -548,6 +563,11 @@
 				<cns:OfferItemID>CHD-OfferItem3</cns:OfferItemID>
 				<!-- Documentation -->
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">800</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -560,7 +580,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">900</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:PaxJourneyRef>
@@ -577,6 +597,11 @@
 				<cns:MandatoryInd>false</cns:MandatoryInd>
 				<cns:OfferItemID>XBAG-Offeritem-Pax1</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">200</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -584,7 +609,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">200</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<!-- Bag service -->
 					<cns:OfferServiceAssociation>
@@ -607,6 +632,11 @@
 				<cns:MandatoryInd>false</cns:MandatoryInd>
 				<cns:OfferItemID>XBAG-Offeritem-Pax2</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">200</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -614,7 +644,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">200</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<!-- Bag service -->
 					<cns:OfferServiceAssociation>
@@ -637,6 +667,11 @@
 				<cns:MandatoryInd>false</cns:MandatoryInd>
 				<cns:OfferItemID>XBAG-Offeritem-Pax3</cns:OfferItemID>
 				<cns:OwnerCode>XB</cns:OwnerCode>
+				<cns:PaymentTimeLimit>
+					<cns:PaymentTimeLimitDate>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
+					</cns:PaymentTimeLimitDate>
+				</cns:PaymentTimeLimit>
 				<cns:Price>
 					<cns:BaseAmount CurCode="NUC">100</cns:BaseAmount>
 					<cns:TaxSummary>
@@ -644,7 +679,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">100</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<!-- Bag service -->
 					<cns:OfferServiceAssociation>
@@ -670,7 +705,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -680,7 +715,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>
@@ -706,7 +741,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -716,7 +751,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>
@@ -738,7 +773,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -748,7 +783,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>
@@ -774,7 +809,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -784,7 +819,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>
@@ -806,7 +841,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -816,7 +851,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>
@@ -842,7 +877,7 @@
 				<cns:OwnerCode>XB</cns:OwnerCode>
 				<cns:PaymentTimeLimit>
 					<cns:PaymentTimeLimitDate>
-						<cns:PaymentTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PaymentTimeLimitDateTime>
+						<cns:PaymentTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PaymentTimeLimitDateTime>
 					</cns:PaymentTimeLimitDate>
 				</cns:PaymentTimeLimit>
 				<cns:Price>
@@ -852,7 +887,7 @@
 					</cns:TaxSummary>
 					<cns:TotalAmount CurCode="NUC">15</cns:TotalAmount>
 				</cns:Price>
-				<cns:PriceGuaranteeTimeLimitDateTime>2021-12-17T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
+				<cns:PriceGuaranteeTimeLimitDateTime>2021-11-14T09:30:47Z</cns:PriceGuaranteeTimeLimitDateTime>
 				<cns:Service>
 					<cns:OfferServiceAssociation>
 						<cns:SeatAssignment>

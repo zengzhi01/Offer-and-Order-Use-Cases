@@ -259,17 +259,6 @@
 				</cns:Pax>
 			</cns:PaxList>
 		</cns:DataLists>
-		<cns:PaymentFunctions>
-		<cns:PaymentProcessingDetails>
-			<cns:Amount>10230</cns:Amount>
-			<cns:PaymentMethod>
-				<cns:SettlementPlan>
-					<cns:IATA_Number>12345678</cns:IATA_Number>
-					<cns:PaymentTypeCode>CA</cns:PaymentTypeCode>
-				</cns:SettlementPlan>
-			</cns:PaymentMethod>
-		</cns:PaymentProcessingDetails>
 		
-	</cns:PaymentFunctions>
 	</n1:Request>
 </n1:IATA_OrderCreateRQ>
