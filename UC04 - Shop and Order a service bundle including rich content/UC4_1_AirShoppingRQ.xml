@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--One traveller (Jane Smith, with a Frequent Flyer Number) based in London is shopping for a round trip to New York. 
+She would like to buy a baggage allowance and request a seat for her flight from London to New York.
+ The customer will commit to pay within a known Price Guarantee Time Limit.
+
+
+Flow: 
+
+1. AirshoppingRQ/RS 
+2. ServiceListRQ/RS
+3. SeatAvailabilityRQ/RS
+4. OfferPriceRQ/RS
+5. OrderCreateRQ/OrderViewRS (3DSV2 payment) 
+
+-->
+<n1:IATA_AirShoppingRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../IATA_AirShoppingRQ.xsd">
+	<n1:DistributionChain>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>1</cns:Ordinal>
+			<cns:OrgRole>Seller</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:Name>ABC Travel</cns:Name>
+				<cns:OrgID>12345678</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+	</n1:DistributionChain>
+	<n1:Request>
+		<cns:FlightRequest>
+			<cns:FlightRequestOriginDestinationsCriteria>
+				<cns:OriginDestCriteria>
+					<cns:DestArrivalCriteria>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:DestArrivalCriteria>
+					<cns:OriginDepCriteria>
+						<cns:Date>2021-11-15</cns:Date>
+						<cns:IATA_LocationCode>LON</cns:IATA_LocationCode>
+					</cns:OriginDepCriteria>
+				</cns:OriginDestCriteria>
+				<cns:OriginDestCriteria>
+					<cns:DestArrivalCriteria>
+						<cns:IATA_LocationCode>LON</cns:IATA_LocationCode>
+					</cns:DestArrivalCriteria>
+					<cns:OriginDepCriteria>
+						<cns:Date>2021-11-23</cns:Date>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:OriginDepCriteria>
+				</cns:OriginDestCriteria>
+			</cns:FlightRequestOriginDestinationsCriteria>
+		</cns:FlightRequest>
+		<cns:PaxList>
+			<cns:Pax>
+				<cns:LoyaltyProgramAccount>
+					<cns:AccountNumber>12345678919</cns:AccountNumber>
+					<cns:LoyaltyProgram>
+						<cns:Carrier>
+							<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+							<cns:Name>XB Airways</cns:Name>
+						</cns:Carrier>
+					</cns:LoyaltyProgram>
+				</cns:LoyaltyProgramAccount>
+				<cns:PaxID>Pax1</cns:PaxID>
+				<cns:ProfileConsentInd>true</cns:ProfileConsentInd>
+				<cns:PTC>ADT</cns:PTC>
+			</cns:Pax>
+		</cns:PaxList>
+	</n1:Request>
+</n1:IATA_AirShoppingRQ>
