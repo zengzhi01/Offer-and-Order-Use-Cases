@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<IATA_OrderReshopRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/vic.zep/Work%20Folders/Desktop/OneDrive%20-%20hahnair.onmicrosoft.com/NDC%20Schemas/21_2_18_key_keyrefs_Draft_schemas/IATA_OrderReshopRS.xsd">
+<IATA_OrderReshopRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../../IATA_OrderReshopRS.xsd">
 	<Response>
 		<cns:DataLists>
 			<cns:PaxList>
@@ -52,7 +52,6 @@
 			<cns:OrderID>XB999A1B2C3D4</cns:OrderID>
 			<cns:OrderVersionNumber>1</cns:OrderVersionNumber>
 			<cns:OwnerCode>XB</cns:OwnerCode>
-			<!--TODO: Add reference to ATSB Codeset ORDERSTATUS-->
 			<cns:StatusCode>OPENED</cns:StatusCode>
 		</cns:Order>
 		<cns:ReshopResults>
@@ -61,20 +60,10 @@
 					<cns:DeleteOrderItem>
 						<cns:ExistingOrderItem>
 							<cns:ExistingService>
-								<!--TODO: Remove ENUM, reference to ATSB Codeset ORDERSERVICE-->
-								<cns:BookingStatusCode>CONFIRMED</cns:BookingStatusCode>
-								<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
-								<cns:DeliveryStatusCode>CONFIRMED</cns:DeliveryStatusCode>
-								<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
 								<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
 							</cns:ExistingService>
 							<cns:ExistingService>
-								<!--TODO: Remove ENUM, reference to ATSB Codeset ORDERSERVICE-->
-								<cns:BookingStatusCode>CONFIRMED</cns:BookingStatusCode>
-								<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
-								<cns:DeliveryStatusCode>CONFIRMED</cns:DeliveryStatusCode>
-								<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
 								<cns:ServiceRefID>XB999A1B2C3D4-1-2</cns:ServiceRefID>
 							</cns:ExistingService>
@@ -316,20 +305,10 @@
 					<cns:DeleteOrderItem>
 						<cns:ExistingOrderItem>
 							<cns:ExistingService>
-								<!--TODO: Remove ENUM, reference to ATSB Codeset ORDERSERVICE-->
-								<cns:BookingStatusCode>CONFIRMED</cns:BookingStatusCode>
-								<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
-								<cns:DeliveryStatusCode>CONFIRMED</cns:DeliveryStatusCode>
-								<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
 								<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
 							</cns:ExistingService>
 							<cns:ExistingService>
-								<!--TODO: Remove ENUM, reference to ATSB Codeset ORDERSERVICE-->
-								<cns:BookingStatusCode>CONFIRMED</cns:BookingStatusCode>
-								<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
-								<cns:DeliveryStatusCode>CONFIRMED</cns:DeliveryStatusCode>
-								<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
 								<cns:ServiceRefID>XB999A1B2C3D4-1-2</cns:ServiceRefID>
 							</cns:ExistingService>

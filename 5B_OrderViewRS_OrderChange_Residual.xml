@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<IATA_OrderViewRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/vic.zep/Work%20Folders/Desktop/OneDrive%20-%20hahnair.onmicrosoft.com/NDC%20Schemas/21_2_18_key_keyrefs_Draft_schemas/IATA_OrderViewRS.xsd">
+<IATA_OrderViewRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../../IATA_OrderViewRS.xsd">
 	<Response>
 		<cns:DataLists>
 			<cns:BaggageAllowanceList>
@@ -17,7 +17,6 @@
 					<cns:PieceAllowance>
 						<cns:TotalQty>1</cns:TotalQty>
 					</cns:PieceAllowance>
-					<!--TODO: Add reference to ATSB Codeset BaggageAllowanceType-->
 					<cns:TypeCode>Checked</cns:TypeCode>
 					<cns:WeightAllowance>
 						<cns:MaximumWeightMeasure>23</cns:MaximumWeightMeasure>
@@ -29,29 +28,68 @@
 					</cns:WeightAllowance>
 				</cns:BaggageAllowance>
 			</cns:BaggageAllowanceList>
-			<!--TODO: Where is BaggageDisclosure referenced?-->
-			<cns:BaggageDisclosureList>
-				<cns:BaggageDisclosure>
-					<cns:BaggageDisclosureID>BAG-DISCLOSURE-1</cns:BaggageDisclosureID>
-					<cns:RuleTypeCode>Y</cns:RuleTypeCode>
-				</cns:BaggageDisclosure>
-			</cns:BaggageDisclosureList>
 			<cns:ContactInfoList>
 				<cns:ContactInfo>
 					<cns:ContactInfoID>CTC-1</cns:ContactInfoID>
 					<cns:EmailAddress>
-						<!--TODO: Add reference to ATSB Codeset CTC-->
 						<cns:ContactTypeText>PER</cns:ContactTypeText>
 						<cns:EmailAddressText>ndc@mail.com</cns:EmailAddressText>
 					</cns:EmailAddress>
 					<cns:Phone>
-						<!--TODO: Add reference to ATSB Codeset CTC-->
 						<cns:ContactTypeText>PER</cns:ContactTypeText>
 						<cns:CountryDialingCode>+33</cns:CountryDialingCode>
 						<cns:PhoneNumber>612345678</cns:PhoneNumber>
 					</cns:Phone>
 				</cns:ContactInfo>
 			</cns:ContactInfoList>
+			<cns:DatedMarketingSegmentList>
+				<cns:DatedMarketingSegment>
+					<cns:Arrival>
+						<cns:AircraftScheduledDateTime>2021-11-16T09:50:00Z</cns:AircraftScheduledDateTime>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+						<cns:StationName>London Heathrow</cns:StationName>
+						<cns:TerminalName>5</cns:TerminalName>
+					</cns:Arrival>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedMarketingSegmentId>MKTSEG-1</cns:DatedMarketingSegmentId>
+					<cns:DatedOperatingSegmentRefId>OPESEG-1</cns:DatedOperatingSegmentRefId>
+					<cns:Dep>
+						<cns:AircraftScheduledDateTime>2021-11-15T22:00:00-05:00</cns:AircraftScheduledDateTime>
+						<cns:BoardingGateID>10</cns:BoardingGateID>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+						<cns:StationName>New York J F Kennedy</cns:StationName>
+						<cns:TerminalName>7</cns:TerminalName>
+					</cns:Dep>
+					<cns:MarketingCarrierFlightNumberText>0015</cns:MarketingCarrierFlightNumberText>
+				</cns:DatedMarketingSegment>
+			</cns:DatedMarketingSegmentList>
+			<cns:DatedOperatingLegList>
+				<cns:DatedOperatingLeg>
+					<cns:Arrival>
+						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
+					</cns:Arrival>
+					<cns:DatedOperatingLegID>LEG-1</cns:DatedOperatingLegID>
+					<cns:Dep>
+						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
+					</cns:Dep>
+					<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
+					<cns:IATA_AircraftType>
+						<cns:IATA_AircraftTypeCode>35J</cns:IATA_AircraftTypeCode>
+					</cns:IATA_AircraftType>
+				</cns:DatedOperatingLeg>
+			</cns:DatedOperatingLegList>
+			<cns:DatedOperatingSegmentList>
+				<cns:DatedOperatingSegment>
+					<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
+					<cns:CarrierName>XB Airlines</cns:CarrierName>
+					<cns:DatedOperatingLegRefID>LEG-1</cns:DatedOperatingLegRefID>
+					<cns:DatedOperatingSegmentId>OPESEG-1</cns:DatedOperatingSegmentId>
+					<cns:Duration>PT6H50M</cns:Duration>
+					<cns:OperatingCarrierFlightNumberText>0015</cns:OperatingCarrierFlightNumberText>
+					<cns:SecureFlightInd>true</cns:SecureFlightInd>
+				</cns:DatedOperatingSegment>
+			</cns:DatedOperatingSegmentList>
 			<cns:OriginDestList>
 				<cns:OriginDest>
 					<cns:DestCode>LHR</cns:DestCode>
@@ -85,51 +123,15 @@
 			</cns:PaxList>
 			<cns:PaxSegmentList>
 				<cns:PaxSegment>
-					<cns:Arrival>
-						<cns:AircraftScheduledDateTime>2021-11-16T09:50:00Z</cns:AircraftScheduledDateTime>
-						<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
-						<cns:StationName>London Heathrow</cns:StationName>
-						<cns:TerminalName>5</cns:TerminalName>
-					</cns:Arrival>
-					<cns:CabinType>
-						<cns:CabinTypeCode>5</cns:CabinTypeCode>
-						<cns:CabinTypeName>Economy</cns:CabinTypeName>
-					</cns:CabinType>
-					<cns:DatedOperatingLeg>
-						<cns:Arrival>
-							<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
-						</cns:Arrival>
-						<cns:DatedOperatingLegID>LEG-1</cns:DatedOperatingLegID>
-						<cns:Dep>
-							<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
-						</cns:Dep>
-						<cns:DistanceMeasure UnitCode="KM">5554</cns:DistanceMeasure>
-						<cns:IATA_AircraftType>
-							<cns:IATA_AircraftTypeCode>35J</cns:IATA_AircraftTypeCode>
-						</cns:IATA_AircraftType>
-					</cns:DatedOperatingLeg>
-					<cns:Dep>
-						<cns:AircraftScheduledDateTime>2021-11-15T22:00:00-05:00</cns:AircraftScheduledDateTime>
-						<cns:BoardingGateID>10</cns:BoardingGateID>
-						<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
-						<cns:StationName>New York J F Kennedy</cns:StationName>
-						<cns:TerminalName>7</cns:TerminalName>
-					</cns:Dep>
-					<cns:Duration>PT6H50M</cns:Duration>
-					<cns:MarketingCarrierInfo>
-						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
-						<cns:CarrierName>XB Airlines</cns:CarrierName>
-						<cns:MarketingCarrierFlightNumberText>0015</cns:MarketingCarrierFlightNumberText>
-						<!--TODO: Review after Cabin/RBD change-->
-						<cns:RBD_Code>Y</cns:RBD_Code>
-					</cns:MarketingCarrierInfo>
-					<cns:OperatingCarrierInfo>
-						<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
-						<cns:CarrierName>XB Airlines</cns:CarrierName>
-						<cns:OperatingCarrierFlightNumberText>0015</cns:OperatingCarrierFlightNumberText>
-					</cns:OperatingCarrierInfo>
+					<cns:CabinTypeAssociationChoice>
+						<cns:SegmentCabinType>
+							<cns:CabinTypeCode>5</cns:CabinTypeCode>
+							<cns:CabinTypeName>Economy</cns:CabinTypeName>
+						</cns:SegmentCabinType>
+					</cns:CabinTypeAssociationChoice>
+					<cns:DatedMarketingSegmentRefId>MKTSEG-1</cns:DatedMarketingSegmentRefId>
+					<cns:MarketingCarrierRBD_Code>Y</cns:MarketingCarrierRBD_Code>
 					<cns:PaxSegmentID>SEG-1</cns:PaxSegmentID>
-					<cns:SecureFlightInd>true</cns:SecureFlightInd>
 				</cns:PaxSegment>
 			</cns:PaxSegmentList>
 			<cns:PenaltyList>
@@ -145,11 +147,6 @@
 			</cns:PenaltyList>
 			<cns:PriceClassList>
 				<cns:PriceClass>
-					<!--TODO: Review after Cabin/RBD change-->
-					<cns:CabinType>
-						<cns:CabinTypeCode>5</cns:CabinTypeCode>
-						<cns:CabinTypeName>Economy</cns:CabinTypeName>
-					</cns:CabinType>
 					<cns:Code>ECOSEMIFLEX</cns:Code>
 					<cns:Name>Economy Semi Flex</cns:Name>
 					<cns:PriceClassID>PRC-1</cns:PriceClassID>
@@ -268,7 +265,6 @@
 									</cns:Tax>
 									<cns:Tax>
 										<cns:Amount CurCode="USD">0.00</cns:Amount>
-										<cns:RefundInd>false</cns:RefundInd>
 										<cns:TaxCode>YQ</cns:TaxCode>
 									</cns:Tax>
 									<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
@@ -375,7 +371,6 @@
 						</cns:BookingEntity>
 						<cns:BookingID>A1B2C3</cns:BookingID>
 					</cns:BookingRef>
-					<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
 					<cns:DeliveryStatusCode>REMOVED</cns:DeliveryStatusCode>
 					<cns:OrderServiceAssociation>
 						<cns:PaxSegmentRef>
@@ -384,7 +379,6 @@
 					</cns:OrderServiceAssociation>
 					<cns:PaxRefID>PAX-1</cns:PaxRefID>
 					<cns:ServiceID>XB999A1B2C3D4-1-1</cns:ServiceID>
-					<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 					<cns:StatusCode>CANCELLED</cns:StatusCode>
 					<cns:ValidatingCarrier>
 						<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
@@ -399,7 +393,6 @@
 						</cns:BookingEntity>
 						<cns:BookingID>A1B2C3</cns:BookingID>
 					</cns:BookingRef>
-					<!--TODO: Add reference to ATSB Codeset DELIVERYSERVICE-->
 					<cns:DeliveryStatusCode>REMOVED</cns:DeliveryStatusCode>
 					<cns:OrderServiceAssociation>
 						<cns:ServiceDefinitionRef>
@@ -414,13 +407,11 @@
 					<cns:PaxRefID>PAX-1</cns:PaxRefID>
 					<cns:ServiceID>XB999A1B2C3D4-1-2</cns:ServiceID>
 					<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
-					<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 					<cns:StatusCode>CANCELLED</cns:StatusCode>
 					<cns:ValidatingCarrier>
 						<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
 					</cns:ValidatingCarrier>
 				</cns:Service>
-				<!--TODO: Add reference to ATSB Codeset ORDERITEM-->
 				<cns:StatusCode>CANCELLED</cns:StatusCode>
 			</cns:OrderItem>
 			<cns:OrderItem>
@@ -461,18 +452,15 @@
 					</cns:OrderServiceAssociation>
 					<cns:PaxRefID>PAX-1</cns:PaxRefID>
 					<cns:ServiceID>XB999A1B2C3D4-2-1</cns:ServiceID>
-					<!--TODO: Add reference to ATSB Codeset ORDERSERVICE-->
 					<cns:StatusCode>CONFIRMED</cns:StatusCode>
 					<cns:ValidatingCarrier>
 						<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
 					</cns:ValidatingCarrier>
 				</cns:Service>
-				<!--TODO: Add reference to ATSB Codeset ORDERITEM-->
 				<cns:StatusCode>ACTIVE</cns:StatusCode>
 			</cns:OrderItem>
 			<cns:OrderVersionNumber>2</cns:OrderVersionNumber>
 			<cns:OwnerCode>XB</cns:OwnerCode>
-			<!--TODO: Add reference to ATSB Codeset ORDERSTATUS-->
 			<cns:StatusCode>OPENED</cns:StatusCode>
 		</cns:Order>
 		<cns:TicketDocInfo>
@@ -491,24 +479,13 @@
 			<cns:BookletQty>1</cns:BookletQty>
 			<cns:FareDetail>
 				<cns:FareComponent>
-					<!--TODO: Review after Cabin/RBD change-->
-					<cns:CabinType>
-						<cns:CabinTypeCode>5</cns:CabinTypeCode>
-						<cns:CabinTypeName>Economy</cns:CabinTypeName>
-					</cns:CabinType>
 					<cns:FareBasisCityPairText>JFKLHRXB</cns:FareBasisCityPairText>
 					<cns:FareBasisCode>YXBOW</cns:FareBasisCode>
-					<!--TODO: Review after Cancel/Change restrictions added to FareComponent-->
-					<cns:FareRule/>
 					<cns:PaxSegmentRefID>SEG-1</cns:PaxSegmentRefID>
 					<cns:Price>
 						<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
 					</cns:Price>
 					<cns:PriceClassRefID>PRC-1</cns:PriceClassRefID>
-					<!--TODO: Review after Cabin/RBD change-->
-					<cns:RBD>
-						<cns:RBD_Code>Y</cns:RBD_Code>
-					</cns:RBD>
 				</cns:FareComponent>
 				<cns:FareIndCode>1</cns:FareIndCode>
 				<cns:PaxRefID>PAX-1</cns:PaxRefID>
@@ -542,7 +519,14 @@
 					<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
 				</cns:Price>
 			</cns:FareDetail>
-			<!--TODO: Missing Ticketing data: Ticketing country code, Ticketing date, Ticketing time, Ticketing location code-->
+			<cns:IssueInfo>
+				<cns:IATA_LocationCode>NYC</cns:IATA_LocationCode>
+				<cns:IssueDate>2021-09-21</cns:IssueDate>
+				<cns:IssueTime>07:37:00-04:00</cns:IssueTime>
+				<cns:IssuingCarrier>
+					<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+				</cns:IssuingCarrier>
+			</cns:IssueInfo>
 			<cns:OriginDest>
 				<cns:DestCode>LON</cns:DestCode>
 				<cns:OriginCode>NYC</cns:OriginCode>
@@ -602,7 +586,14 @@
 					<cns:TotalAmount CurCode="USD">750.00</cns:TotalAmount>
 				</cns:Price>
 			</cns:FareDetail>
-			<!--TODO: Missing Ticketing data: Ticketing country code, Ticketing date, Ticketing time, Ticketing location code-->
+			<cns:IssueInfo>
+				<cns:IATA_LocationCode>NYC</cns:IATA_LocationCode>
+				<cns:IssueDate>2021-09-24</cns:IssueDate>
+				<cns:IssueTime>09:50:26-04:00</cns:IssueTime>
+				<cns:IssuingCarrier>
+					<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+				</cns:IssuingCarrier>
+			</cns:IssueInfo>
 			<cns:OriginalIssueInfo>
 				<cns:IATA_LocationCode>NYC</cns:IATA_LocationCode>
 				<cns:IssueDate>2021-09-21</cns:IssueDate>
@@ -610,7 +601,7 @@
 				<cns:IssuingCarrier>
 					<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
 				</cns:IssuingCarrier>
-				<cns:TicketNumber>9992412345678</cns:TicketNumber>
+				<cns:TicketNumber>999-2412345678</cns:TicketNumber>
 			</cns:OriginalIssueInfo>
 			<cns:PaxRefID>PAX-1</cns:PaxRefID>
 			<cns:ReferencedOrder>
@@ -655,7 +646,6 @@
 					<cns:PaymentTypeCode>CA</cns:PaymentTypeCode>
 				</cns:SettlementPlan>
 			</cns:PaymentProcessingSummaryPaymentMethod>
-			<!--TODO: Add reference to ATSB Codeset PAYS-->
 			<cns:PaymentStatusCode>SUCCESSFUL</cns:PaymentStatusCode>
 		</cns:PaymentProcessingSummary>
 	</PaymentFunctions>

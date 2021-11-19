@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IATA_OrderReshopRS xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../../IATA_OrderReshopRS.xsd">
+	<Response>
+		<cns:DataLists>
+			<cns:PaxList>
+				<cns:Pax>
+					<cns:Individual>
+						<cns:Birthdate>1977-03-15</cns:Birthdate>
+						<cns:GenderCode>M</cns:GenderCode>
+						<cns:GivenName>John</cns:GivenName>
+						<cns:IndividualID>IND-1</cns:IndividualID>
+						<cns:Surname>Doe</cns:Surname>
+						<cns:TitleName>Mr</cns:TitleName>
+					</cns:Individual>
+					<cns:PaxID>PAX-1</cns:PaxID>
+					<cns:PTC>ADT</cns:PTC>
+				</cns:Pax>
+			</cns:PaxList>
+			<cns:PenaltyList>
+				<cns:Penalty>
+					<cns:DescText>Refund Penalty</cns:DescText>
+					<cns:NetInd>true</cns:NetInd>
+					<cns:PenaltyID>PEN-REFUND</cns:PenaltyID>
+					<cns:Price>
+						<cns:TotalAmount CurCode="USD">100.00</cns:TotalAmount>
+					</cns:Price>
+					<cns:TypeCode>Cancellation</cns:TypeCode>
+				</cns:Penalty>
+				<cns:Penalty>
+					<cns:DescText>Residual Value Penalty</cns:DescText>
+					<cns:NetInd>true</cns:NetInd>
+					<cns:PenaltyID>PEN-RESIDUAL</cns:PenaltyID>
+					<cns:Price>
+						<cns:TotalAmount CurCode="USD">50.00</cns:TotalAmount>
+					</cns:Price>
+					<cns:TypeCode>Change</cns:TypeCode>
+				</cns:Penalty>
+			</cns:PenaltyList>
+			<cns:ServiceDefinitionList>
+				<cns:ServiceDefinition>
+					<cns:Name>Residual Value</cns:Name>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:RFIC>X</cns:RFIC>
+					<cns:RFISC>999</cns:RFISC>
+					<cns:ServiceCode>RSVR</cns:ServiceCode>
+					<cns:ServiceDefinitionID>SVC-RESIDUAL</cns:ServiceDefinitionID>
+				</cns:ServiceDefinition>
+			</cns:ServiceDefinitionList>
+		</cns:DataLists>
+		<cns:Order>
+			<cns:CreationDateTime>2021-09-21T11:37:00Z</cns:CreationDateTime>
+			<cns:OrderID>XB999A1B2C3D4</cns:OrderID>
+			<cns:OrderVersionNumber>1</cns:OrderVersionNumber>
+			<cns:OwnerCode>XB</cns:OwnerCode>
+			<cns:StatusCode>OPENED</cns:StatusCode>
+		</cns:Order>
+		<cns:ReshopResults>
+			<cns:ReshopOffers>
+				<cns:Offer>
+					<cns:DeleteOrderItem>
+						<cns:ExistingOrderItem>
+							<cns:ExistingService>
+								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
+								<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:ExistingService>
+								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
+								<cns:ServiceRefID>XB999A1B2C3D4-1-2</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>XB999A1B2C3D4-1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>XB999-OFFERITEMID-A12B34C56D78E90-REFUND-1</cns:OfferItemID>
+						<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+						<cns:PriceDifferential>
+							<cns:DifferentialTypeCode>Refund</cns:DifferentialTypeCode>
+							<cns:DiffPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">-500.00</cns:BaseAmount>
+										<cns:DueByAirlineAmount CurCode="USD">-525.00</cns:DueByAirlineAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">-75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">-50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">-125.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">-625.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">-500.00</cns:BaseAmount>
+									<cns:DueByAirlineAmount CurCode="USD">-525.00</cns:DueByAirlineAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">-75.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">-50.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">-125.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">-625.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:DiffPrice>
+							<cns:NewPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-REFUND</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">175.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">175.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">175.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">175.00</cns:Amount>
+											<cns:RefundInd>false</cns:RefundInd>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">175.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">175.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:NewPrice>
+							<cns:OldPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">175.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+											<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">75.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:RefundInd>true</cns:RefundInd>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">50.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:RefundInd>true</cns:RefundInd>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">175.00</cns:Amount>
+											<cns:RefundInd>false</cns:RefundInd>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+										<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:OldPrice>
+						</cns:PriceDifferential>
+					</cns:DeleteOrderItem>
+					<cns:OfferExpirationTimeLimitDateTime>2021-09-24T19:00:00Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>XB999-OFFERID-A12B34C56D78E90-REFUND</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+				</cns:Offer>
+				<cns:Offer>
+					<cns:AddedOfferItem>
+						<cns:CancelRestrictions>
+							<cns:AllowedModificationInd>false</cns:AllowedModificationInd>
+						</cns:CancelRestrictions>
+						<cns:ChangeRestrictions>
+							<cns:AllowedModificationInd>true</cns:AllowedModificationInd>
+							<cns:Fee>
+								<cns:Amount CurCode="USD">0.00</cns:Amount>
+							</cns:Fee>
+						</cns:ChangeRestrictions>
+						<cns:Desc>
+							<cns:DescText>Residual Value</cns:DescText>
+						</cns:Desc>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>XB999-OFFERITEMID-A12B34C56D78E90-RESIDUAL-1</cns:OfferItemID>
+						<cns:ReshopPrice>
+							<cns:PriceAndFareDetails>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:Price>
+										<cns:TotalAmount CurCode="USD">750.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:TotalAmount CurCode="USD">750.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:PriceAndFareDetails>
+						</cns:ReshopPrice>
+						<cns:Service>
+							<cns:DescText>Residual Value</cns:DescText>
+							<cns:OfferServiceAssociation>
+								<cns:ServiceDefinitionRef>
+									<cns:ServiceDefinitionRefID>SVC-RESIDUAL</cns:ServiceDefinitionRefID>
+								</cns:ServiceDefinitionRef>
+							</cns:OfferServiceAssociation>
+							<cns:PaxRefID>PAX-1</cns:PaxRefID>
+							<cns:ServiceID>XB999-SERVICEID-A12B34C56D78E90-RESIDUAL-1-1</cns:ServiceID>
+							<cns:ValidatingCarrier>
+								<cns:AirlineDesigCode>XB</cns:AirlineDesigCode>
+							</cns:ValidatingCarrier>
+						</cns:Service>
+					</cns:AddedOfferItem>
+					<cns:DeleteOrderItem>
+						<cns:ExistingOrderItem>
+							<cns:ExistingService>
+								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
+								<cns:ServiceRefID>XB999A1B2C3D4-1-1</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:ExistingService>
+								<cns:FutureStatusCode>CANCELLED</cns:FutureStatusCode>
+								<cns:ServiceRefID>XB999A1B2C3D4-1-2</cns:ServiceRefID>
+							</cns:ExistingService>
+							<cns:OrderItemRefID>XB999A1B2C3D4-1</cns:OrderItemRefID>
+						</cns:ExistingOrderItem>
+						<cns:MandatoryInd>true</cns:MandatoryInd>
+						<cns:OfferItemID>XB999-OFFERITEMID-A12B34C56D78E90-RESIDUAL-2</cns:OfferItemID>
+						<cns:PenaltyRefID>PEN-RESIDUAL</cns:PenaltyRefID>
+						<cns:PriceDifferential>
+							<cns:DifferentialTypeCode>Residual</cns:DifferentialTypeCode>
+							<cns:DiffPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-RESIDUAL</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">-500.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">-75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">-50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">-175.00</cns:Amount>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">-300.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">-800.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">-500.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">-75.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">-50.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">-175.00</cns:Amount>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">-300.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">-800.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:DiffPrice>
+							<cns:NewPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:PenaltyRefID>PEN-RESIDUAL</cns:PenaltyRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">0.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">0.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">0.00</cns:Amount>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalTaxAmount CurCode="USD">0.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">0.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:NewPrice>
+							<cns:OldPrice>
+								<cns:FareDetail>
+									<cns:PaxRefID>PAX-1</cns:PaxRefID>
+									<cns:Price>
+										<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+										<cns:TaxSummary>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">75.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>US</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>US</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">50.00</cns:Amount>
+												<cns:Country>
+													<cns:CountryCode>GB</cns:CountryCode>
+												</cns:Country>
+												<cns:RefundInd>true</cns:RefundInd>
+												<cns:TaxCode>GB</cns:TaxCode>
+											</cns:Tax>
+											<cns:Tax>
+												<cns:Amount CurCode="USD">175.00</cns:Amount>
+												<cns:RefundInd>false</cns:RefundInd>
+												<cns:TaxCode>YQ</cns:TaxCode>
+											</cns:Tax>
+											<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+											<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+										</cns:TaxSummary>
+										<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+									</cns:Price>
+								</cns:FareDetail>
+								<cns:Price>
+									<cns:BaseAmount CurCode="USD">500.00</cns:BaseAmount>
+									<cns:TaxSummary>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">75.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>US</cns:CountryCode>
+											</cns:Country>
+											<cns:RefundInd>true</cns:RefundInd>
+											<cns:TaxCode>US</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">50.00</cns:Amount>
+											<cns:Country>
+												<cns:CountryCode>GB</cns:CountryCode>
+											</cns:Country>
+											<cns:RefundInd>true</cns:RefundInd>
+											<cns:TaxCode>GB</cns:TaxCode>
+										</cns:Tax>
+										<cns:Tax>
+											<cns:Amount CurCode="USD">175.00</cns:Amount>
+											<cns:RefundInd>false</cns:RefundInd>
+											<cns:TaxCode>YQ</cns:TaxCode>
+										</cns:Tax>
+										<cns:TotalRefundableTaxAmount CurCode="USD">125.00</cns:TotalRefundableTaxAmount>
+										<cns:TotalTaxAmount CurCode="USD">300.00</cns:TotalTaxAmount>
+									</cns:TaxSummary>
+									<cns:TotalAmount CurCode="USD">800.00</cns:TotalAmount>
+								</cns:Price>
+							</cns:OldPrice>
+						</cns:PriceDifferential>
+					</cns:DeleteOrderItem>
+					<cns:OfferExpirationTimeLimitDateTime>2021-09-24T19:00:00Z</cns:OfferExpirationTimeLimitDateTime>
+					<cns:OfferID>XB999-OFFERID-A12B34C56D78E90-RESIDUAL</cns:OfferID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+				</cns:Offer>
+			</cns:ReshopOffers>
+		</cns:ReshopResults>
+	</Response>
+</IATA_OrderReshopRS>

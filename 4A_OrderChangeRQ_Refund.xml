@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<IATA_OrderChangeRQ xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/vic.zep/Work%20Folders/Desktop/OneDrive%20-%20hahnair.onmicrosoft.com/NDC%20Schemas/21_2_18_key_keyrefs_Draft_schemas/IATA_OrderChangeRQ.xsd">
+<IATA_OrderChangeRQ xmlns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ../../IATA_OrderChangeRQ.xsd">
 	<DistributionChain>
 		<cns:DistributionChainLink>
 			<cns:Ordinal>1</cns:Ordinal>
