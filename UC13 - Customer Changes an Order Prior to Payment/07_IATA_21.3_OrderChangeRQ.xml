@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<n1:IATA_OrderChangeRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ./IATA_OrderChangeRQ.xsd">
+	<n1:DistributionChain>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>1</cns:Ordinal>
+			<cns:OrgRole>Seller</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:Name>XYZ Agency</cns:Name>
+				<cns:OrgID>1245678</cns:OrgID>
+			</cns:ParticipatingOrg>
+			<cns:SalesAgent>
+				<cns:SalesAgentID>agent123</cns:SalesAgentID>
+			</cns:SalesAgent>
+			<cns:SalesBranch>
+				<cns:SalesBranchID>ABCD</cns:SalesBranchID>
+			</cns:SalesBranch>
+		</cns:DistributionChainLink>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>2</cns:Ordinal>
+			<cns:OrgRole>Distributor</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:Name>Farelogix</cns:Name>
+				<cns:OrgID>F1</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+		<cns:DistributionChainLink>
+			<cns:Ordinal>3</cns:Ordinal>
+			<cns:OrgRole>Carrier</cns:OrgRole>
+			<cns:ParticipatingOrg>
+				<cns:Name>Testing Airlines</cns:Name>
+				<cns:OrgID>XB</cns:OrgID>
+			</cns:ParticipatingOrg>
+		</cns:DistributionChainLink>
+	</n1:DistributionChain>
+	<n1:Request>
+		<cns:ChangeOrderChoice>
+			<cns:AcceptSelectedQuotedOfferList>
+				<cns:SelectedPricedOffer>
+					<cns:OfferRefID>R39D6D643-B562-428F-B4FB-1</cns:OfferRefID>
+					<cns:OwnerCode>XB</cns:OwnerCode>
+					<cns:SelectedOfferItem>
+						<cns:OfferItemRefID>R39D6D643-B562-428F-B4FB-1-1</cns:OfferItemRefID>
+						<cns:PaxRefID>T1</cns:PaxRefID>
+						<cns:PaxRefID>T2</cns:PaxRefID>
+					</cns:SelectedOfferItem>
+					<cns:SelectedOfferItem>
+						<cns:OfferItemRefID>R39D6D643-B562-428F-B4FB-1-2</cns:OfferItemRefID>
+						<cns:PaxRefID>T1.1</cns:PaxRefID>
+					</cns:SelectedOfferItem>
+					<cns:SelectedOfferItem>
+						<cns:OfferItemRefID>R39D6D643-B562-428F-B4FB-1-3</cns:OfferItemRefID>
+						<cns:PaxRefID>T3</cns:PaxRefID>
+					</cns:SelectedOfferItem>
+					<cns:TotalOfferPriceAmount CurCode="USD">00.00</cns:TotalOfferPriceAmount>
+				</cns:SelectedPricedOffer>
+			</cns:AcceptSelectedQuotedOfferList>
+		</cns:ChangeOrderChoice>
+		<cns:Order>
+			<cns:OrderID>XB999E54F8694</cns:OrderID>
+			<cns:OwnerCode>XB</cns:OwnerCode>
+		</cns:Order>
+		<cns:PaymentFunctions>
+			<cns:PaymentProcessingDetails>
+				<cns:Amount CurCode="USD">00.00</cns:Amount>
+				<cns:PaymentMethod>
+					<cns:OfflinePayment>
+						<cns:PaymentTypeCode>Cash</cns:PaymentTypeCode>
+					</cns:OfflinePayment>
+				</cns:PaymentMethod>
+			</cns:PaymentProcessingDetails>
+		</cns:PaymentFunctions>
+	</n1:Request>
+</n1:IATA_OrderChangeRQ>

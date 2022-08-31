@@ -1,4 +1,7 @@
-<n1:IATA_OrderReshopRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n2="http://www.altova.com/samplexml/other-namespace" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/Users/arodriguez/Downloads/Enhanced-and-Simplified-Distribution-Schema-Development-main/IATA_OrderReshopRQ.xsd">
+<n1:IATA_OrderReshopRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+		       xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" 
+		       xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" 
+		       xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ./IATA_OrderReshopRQ.xsd">
 	<n1:DistributionChain>
 		<cns:DistributionChainLink>
 			<cns:Ordinal>1</cns:Ordinal>
@@ -31,18 +34,24 @@
 			</cns:ParticipatingOrg>
 		</cns:DistributionChainLink>
 	</n1:DistributionChain>
+        <n1:POS>
+		<cns:Country>
+			<cns:CountryCode>US</cns:CountryCode>
+		</cns:Country>
+		<cns:RequestTime>2022-08-26T14:21:09Z</cns:RequestTime>
+	</n1:POS>
 	<n1:Request>
 		<cns:DatedMarketingSegmentList>
 			<cns:DatedMarketingSegment>
 				<cns:Arrival>
-					<cns:AircraftScheduledDateTime>2021-02-28T09:20:00Z</cns:AircraftScheduledDateTime>
+					<cns:AircraftScheduledDateTime>2022-08-28T09:20:00Z</cns:AircraftScheduledDateTime>
 					<cns:IATA_LocationCode>LHR</cns:IATA_LocationCode>
 				</cns:Arrival>
 				<cns:CarrierDesigCode>XB</cns:CarrierDesigCode>
 				<cns:DatedMarketingSegmentId>Segment100003</cns:DatedMarketingSegmentId>
 				<cns:DatedOperatingSegmentRefId>Oper100000130</cns:DatedOperatingSegmentRefId>
 				<cns:Dep>
-					<cns:AircraftScheduledDateTime>2021-02-27T21:30:00Z</cns:AircraftScheduledDateTime>
+					<cns:AircraftScheduledDateTime>2022-08-27T21:30:00Z</cns:AircraftScheduledDateTime>
 					<cns:IATA_LocationCode>JFK</cns:IATA_LocationCode>
 				</cns:Dep>
 				<cns:MarketingCarrierFlightNumberText>6927</cns:MarketingCarrierFlightNumberText>
@@ -61,6 +70,12 @@
 			<cns:PaxJourney>
 				<cns:PaxJourneyID>F1</cns:PaxJourneyID>
 				<cns:PaxSegment>
+					<cns:CabinTypeAssociationChoice>
+						<cns:SegmentCabinType>
+							<cns:CabinTypeCode>5</cns:CabinTypeCode>
+							<cns:CabinTypeName>BasicEconomy</cns:CabinTypeName>
+						</cns:SegmentCabinType>
+					</cns:CabinTypeAssociationChoice>
 					<cns:DatedMarketingSegmentRefId>Segment100003</cns:DatedMarketingSegmentRefId>
 					<cns:PaxSegmentID>S1</cns:PaxSegmentID>
 				</cns:PaxSegment>
@@ -94,14 +109,15 @@
 						</cns:AddOfferItems>
 						<cns:DeleteOrderItem>
 							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-1</cns:OrderItemRefID>
-							<cns:RetainServiceID>SRV1-T1-S2 SRV1-T2-S2</cns:RetainServiceID>
-						</cns:DeleteOrderItem>
-						<cns:DeleteOrderItem>
-							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-2</cns:OrderItemRefID>
-							<cns:RetainServiceID>SRV1-T1.1-S2</cns:RetainServiceID>
+							<cns:RetainServiceID>SRV1-T1-S2</cns:RetainServiceID>
+							<cns:RetainServiceID>SRV1-T2-S2</cns:RetainServiceID>
 						</cns:DeleteOrderItem>
 						<cns:DeleteOrderItem>
 							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-3</cns:OrderItemRefID>
+							<cns:RetainServiceID>SRV1-T1.1-S2</cns:RetainServiceID>
+						</cns:DeleteOrderItem>
+						<cns:DeleteOrderItem>
+							<cns:OrderItemRefID>XC1C8F91C-20C5-4535-93EF-1-2</cns:OrderItemRefID>
 							<cns:RetainServiceID>SRV1-T3-S2</cns:RetainServiceID>
 						</cns:DeleteOrderItem>
 					</cns:ServiceOrder>

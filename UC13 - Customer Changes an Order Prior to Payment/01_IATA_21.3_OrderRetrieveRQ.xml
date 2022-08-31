@@ -1,4 +1,4 @@
-<n1:IATA_OrderRetrieveRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n2="http://www.altova.com/samplexml/other-namespace" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage file:///C:/iata/21.3.1/IATA_OrderRetrieveRQ.xsd">
+<n1:IATA_OrderRetrieveRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:n1="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage" xmlns:cns="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersCommonTypes" xsi:schemaLocation="http://www.iata.org/IATA/2015/EASD/00/IATA_OffersAndOrdersMessage ./IATA_OrderRetrieveRQ.xsd">
 	<n1:DistributionChain>
 		<cns:DistributionChainLink>
 			<cns:Ordinal>1</cns:Ordinal>
